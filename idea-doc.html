@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  body{margin:0;background:#fff;font-family:'Pretendard Variable',sans-serif;color:#1b1a17;-webkit-font-smoothing:antialiased}
+  #doc{width:860px;padding:52px 56px 48px;box-sizing:border-box}
+  mark{background:#dff0e4;color:#17603a;padding:0 2px;border-radius:2px}
+  h1{font:600 38px/1.35 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 6px}
+  .meta{font:400 16px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:30px}
+  .lbl{font:600 17px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#51A679;margin:0 0 12px}
+  section{padding-top:24px;border-top:1px solid #ece9e2;margin-top:24px}
+  p{font:400 20px/1.8 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 12px}
+  ul{margin:0 0 4px;padding-left:18px}
+  li{font:400 20px/1.8 'Pretendard Variable',sans-serif;color:#3a3833}
+  table{border-collapse:collapse;width:100%;margin:6px 0 4px;font:400 18px/1.5 'Pretendard Variable',sans-serif}
+  th{text-align:left;font-weight:600;color:#8a877e;font-size:15px;letter-spacing:.04em;padding:0 0 8px;border-bottom:1px solid #ece9e2}
+  td{padding:8px 0;border-bottom:1px solid #f3f1ea;color:#3a3833}
+  td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .hl{background:#f7f5f0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px 36px}
+  .fn{font:400 16.5px/1.75 'Pretendard Variable',sans-serif;color:#8a877e;margin:8px 0 0}
+</style>
+</head>
+<body>
+<div id="doc">
+  <h1>프로젝트명: 중국관광 지도형 콘텐츠 ‘원샷 중국여행(가제)’ 앱 개발</h1>
+  <div class="meta">2024.11 차이나랩 사업 아이디어 · 임서영</div>
+
+  <section style="border-top:none;padding-top:0;margin-top:0">
+    <div class="lbl">구상 계기</div>
+    <p>중국 비자 면제 발표 이틀만에 중국 여행 예약이 <mark>65% 폭증</mark>함. 2040은 패키지가 아닌 <mark>자유여행</mark>으로 일정을 짜서 떠나는 비율이 훨씬 높음. 특히 여행카페에서는 상하이, 칭다오 여행 키워드가 급증함.</p>
+    <p>그러나 타 국가에 비해 중국 여행은 <b>언어 장벽</b>이 존재. 게시물의 한국어 표기도 제멋대로라 <mark>1) 검색에 한계</mark>가 있으며, 블로그나 유튜브로 정보를 수집해도 <mark>2) 지도상에서 위치 파악이 어려움</mark>. 중국어를 모르는 여행객 대부분은 구글에서 한국어로 검색한 뒤 고덕지도에 중국어를 복사해 찾는 번거로움 존재. 여행이 활성화된 타 국가들과 달리 <mark>3) ‘중국여행’ 주제의 한국인 커뮤니티 부재</mark>.</p>
+    <table>
+      <tr><th>커뮤니티명</th><th>국가</th><th>가입자수</th></tr>
+      <tr><td>유랑(유럽여행동반자)</td><td>유럽</td><td>235만 명</td></tr>
+      <tr><td>네일동</td><td>일본</td><td>185만 명</td></tr>
+      <tr><td>베나자</td><td>베트남</td><td>94만 명</td></tr>
+      <tr><td>괌여행길라잡이</td><td>괌</td><td>89만 명</td></tr>
+      <tr class="hl"><td><b>중정공(중국정보공유카페)</b></td><td>중국 (여행 중심 X)</td><td><b>32만 명</b></td></tr>
+    </table>
+  </section>
+
+  <section>
+    <div class="lbl">제안</div>
+    <p>대도시를 중심으로 맛집, 라오쯔하오(100년 전통기업), 도시에서 의미 있는 장소, 테마파크의 <b>거리와 위치를 시각적으로 파악할 수 있는 지도형 콘텐츠</b>를 제작하고 반응형 플랫폼으로 구축. 해당 장소를 클릭하면 주소·위치·교통 정보뿐 아니라 <b>그 장소를 소개하는 콘텐츠도 함께 연동</b>되도록 구성.</p>
+    <div class="two">
+      <div>
+        <div class="lbl" style="margin-top:8px">타겟</div>
+        <ul>
+          <li>개별(자유)여행객(散客)</li>
+          <li>새로운 근거리 여행지를 찾는 여행객</li>
+          <li>중국을 방문하는 한국인</li>
+        </ul>
+      </div>
+      <div>
+        <div class="lbl" style="margin-top:8px">레퍼런스</div>
+        <ul>
+          <li>카카오맵 / 네이버 플레이스</li>
+          <li>푸딘코(Food in Korea) / 다이닝코드</li>
+          <li>내 위치 기준 근처 장소 → 클릭 시 구체 콘텐츠</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="lbl">콘텐츠 예시</div>
+    <div class="two">
+      <ul>
+        <li>푸둥공항 vs 훙차오공항, 어디로 갈까?</li>
+        <li>3시간 만에 둘러보는 신톈디</li>
+        <li>상하이 디즈니랜드 주변에서 하루 코스</li>
+      </ul>
+      <ul>
+        <li>맛으로만 버텨온 상하이 노포 10곳</li>
+        <li>기념품 고민 덜어줄 가게 5선</li>
+        <li>현지인이 추천하는 선물 TOP5 (관광청 협업)</li>
+      </ul>
+    </div>
+    <p class="fn">중국 지역별 영사관 9곳(주중국·상하이·광저우·선양·시안·우한·청두·칭다오·다롄출장소)과 핫라인·공지 즉시 공유 등 협력 가능.</p>
+  </section>
+
+  <section>
+    <div class="two">
+      <div>
+        <div class="lbl">수익구조</div>
+        <ul>
+          <li>관광객 유치를 원하는 각 성(지자체)의 홍보 예산</li>
+          <li><mark>누적사용자수 10만 명 확보 시 광고 유치</mark></li>
+        </ul>
+        <p class="fn">대상: 결제수단·대중교통(항공·철도·택시)·숙박 관련 중국기업, 골프장, 로밍(통신사), eSIM, 여행자보험 등 여행업계 전체.</p>
+      </div>
+      <div>
+        <div class="lbl">확장성</div>
+        <p>중국여행객의 필수 지도앱인 <b>가오더지도·바이두지도는 한글 서비스가 없음</b>. 해당 기업과 협의해 <mark>‘한글 서비스’ 제작 용역 수주</mark>도 가능.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="lbl">지도 API 검토</div>
+    <table>
+      <tr><th>후보</th><th>판단</th></tr>
+      <tr><td>바이두 지도</td><td>사용자 기반 최대 · 한국어 지원 제한적</td></tr>
+      <tr class="hl"><td><b>가오더 지도(Amap)</b></td><td><b>가장 적합 — 국제화 협력 경험, API 문서 정비</b></td></tr>
+      <tr><td>텐센트 지도</td><td>위챗 연동 가능 · 한국어 문서 부족</td></tr>
+    </table>
+    <p class="fn">Google Maps 지원 불가. 중국 내 지도 데이터는 GCJ-02 좌표계 변환 필요(바이두·가오더 API 자동 지원), 데이터는 중국 내 서버 저장 또는 현지 업체 협력 필요.</p>
+  </section>
+
+  <section>
+    <div class="lbl">해결할 문제</div>
+    <ul>
+      <li>지명 및 상점의 한국어 번역 작업이 선행되어야 함 — 그 범위를 어디까지 할 것인가</li>
+      <li>지도앱이 중국 현지에서 eSIM이나 로밍 없이도 구현되는가</li>
+      <li>실시간 교통편이 반영되는 고덕·바이두지도 API 사용 가능 여부와 유지 비용</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

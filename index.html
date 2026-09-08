@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<title>임서영 — 콘텐츠 기획·에디터 포트폴리오</title>
+<meta name="description" content="네이버 중국판, 중여커, 카드뉴스까지. 기획부터 카피·운영·지표까지 직접 만든 콘텐츠 기록.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23305F32'/%3E%3Ctext x='32' y='43' font-family='sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E%EC%9E%84%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://limseoyoung.vercel.app/">
+<meta property="og:image" content="https://limseoyoung.vercel.app/assets/og-cover.png">
+<meta property="og:title" content="임서영 — 콘텐츠 기획·에디터 포트폴리오">
+<meta property="og:description" content="네이버 중국판, 중여커, 카드뉴스까지. 기획부터 카피·운영·지표까지 직접 만든 콘텐츠 기록.">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+html,body{margin:0;padding:0}
+body{background:#eceae5;color:#1b1a17;font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:#275c4a;text-decoration:none}
+a:hover{color:#1b1a17}
+@keyframes hlSweep{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+</style>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#305F32"></rect><text x="50" y="62" font-family="sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">임서영</text></svg></template>
+</helmet>
+
+<div style="min-height:100vh;background:#eceae5;padding:0 0 60px">
+
+  
+
+  <div style="display:flex;justify-content:center;padding:28px 18px 0">
+  <div style="width:{{ frameW }};max-width:100%;background:#fdfdfc;border-radius:18px;box-shadow:0 20px 60px rgba(27,26,23,.1);overflow:hidden">
+
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:22px 40px">
+      
+      <div style="font: 600 15px/1 'Pretendard Variable',sans-serif; letter-spacing: -.02em; width: 210px; height: 18px">임서영 포트폴리오</div><div style="display:flex;flex-wrap:wrap;gap:22px;font:500 13px/1 'Pretendard Variable',sans-serif">
+        <a href="#" onClick="{{ goHome }}" style="color:{{ navHome }}">소개</a>
+        <a href="#" onClick="{{ goCases }}" style="color:{{ navCases }}">주요 프로젝트</a>
+        <a href="#" onClick="{{ goLibrary }}" style="color:{{ navLib }}">카피 라이브러리</a>
+        <a href="mailto:lsseys1991@gmail.com" style="color:#6b6960">이메일</a>
+      </div>
+    </div>
+
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <div style="padding:30px 40px 0">
+      <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+        
+        <div style="flex:1 1 440px;min-width:0">
+          <img src="assets/image2.jpg" alt="임서영" style="width:78px;height:78px;border-radius:999px;object-fit:cover;display:block;margin-bottom:26px">
+          
+          <h1 style="font:600 {{ heroSize }}/1.24 'Pretendard Variable',sans-serif;letter-spacing:-.035em;margin:0 0 26px;text-wrap:pretty">콘텐츠로<br>브랜드의 성장을 이끕니다</h1>
+          <div style="margin:0 0 24px;padding:14px 0 16px;border-top:1px solid #ddd9cf;border-bottom:1px solid #ddd9cf">
+            <div style="font:600 17px/1.55 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#2f4a3c">브랜드 카피라이터 · 콘텐츠 디렉터 · 커뮤니케이션 리더</div>
+            <div style="font:400 14.5px/1.65 'Pretendard Variable',sans-serif;color:#6b6960;margin-top:6px">중앙일보·네이버 JV 차이나랩 뉴스제작팀장｜총 경력 10년 6개월</div>
+          </div>
+          
+        </div><div style="flex:0 1 240px;min-width:190px;padding:24px;border-radius:14px;background:#f5f3ee">
+          <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.08em;color:#8a877e;margin-bottom:18px">KEYWORD</div>
+          <div style="display:flex;flex-direction:column;gap:18px">
+            <div><div style="font:600 26px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.03em">10년 6개월</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;margin-top:5px">총 경력 · 차이나랩 뉴스제작팀장</div></div>
+            <div><div style="font:600 26px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.03em">73,145명</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;margin-top:5px">'중여커' 네이밍·상표등록·커뮤니티 빌딩</div></div>
+            <div><div style="font:600 26px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.03em">325,000건 이상</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;margin-top:5px">사전 DB 표기 규칙·거버넌스 총괄</div></div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:28px">
+            <button type="button" onClick="{{ goCases }}" style="border:0;border-radius:999px;background:#1b1a17;color:#fdfdfc;font:500 13px/1 'Pretendard Variable',sans-serif;padding:14px 22px;cursor:pointer" style-hover="background:#275c4a">주요 프로젝트 보기</button>
+            <a href="mailto:lsseys1991@gmail.com" style="display:inline-block;border-radius:999px;background:#f1efe9;color:#1b1a17;font:500 13px/1 'Pretendard Variable',sans-serif;padding:14px 22px" style-hover="background:#e3e0d7">이메일</a>
+            <span style="font:400 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;white-space:nowrap">010-9299-4971</span>
+          </div>
+    </div>
+
+    <div style="margin-top:52px;padding:52px 40px;background:#f5f3ee">
+      <h2 style="font:600 {{ secSize }}/1.3 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 14px">경력</h2>
+      <p style="font:400 15px/1.8 'Pretendard Variable',sans-serif;color:#6b6960;margin:0 0 30px">2015년 중앙일보 인턴으로 시작해 현재 차이나랩 뉴스제작팀장. 한 그룹에서 10년 6개월간 근무했습니다.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:28px 18px">
+        <div style="flex:2 1 170px;min-width:150px;display:flex;flex-direction:column;gap:10px">
+          <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a">2015 – 2017</div>
+          <div style="height:6px;border-radius:3px;background:#cdc8ba"></div>
+          <div style="font:600 14.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17">중앙일보</div>
+          <div style="font:400 13px/1.7 'Pretendard Variable',sans-serif;color:#6b6960">창간 50주년 TF팀 인턴 · 모바일서비스팀 사원</div>
+        </div>
+        <div style="flex:5 1 170px;min-width:150px;display:flex;flex-direction:column;gap:10px">
+          <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e">2017 – 2022</div>
+          <div style="height:6px;border-radius:3px;background:#b9c9b4"></div>
+          <div style="font:600 14.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17">차이나랩 (중앙일보·네이버 JV)</div>
+          <div style="font:400 13px/1.7 'Pretendard Variable',sans-serif;color:#6b6960">에디터 · CP — 네이버 메인 중국 주제판 편성</div>
+        </div>
+        <div style="flex:4 1 170px;min-width:150px;display:flex;flex-direction:column;gap:10px">
+          <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#305F32">2023 – 현재</div>
+          <div style="height:6px;border-radius:3px;background:#305F32"></div>
+          <div style="font:600 14.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17">차이나랩</div>
+          <div style="font:400 13px/1.7 'Pretendard Variable',sans-serif;color:#6b6960">뉴스제작팀장 — 프로젝트 총괄 · 서비스 기획 · 브랜딩</div>
+        </div>
+      </div>
+    
+      <div style="margin:44px 0 40px;border-top:1px solid #e3e0d8"></div>
+
+      <div style="font:600 22px/1.35 'Pretendard Variable',sans-serif;letter-spacing:-.03em;color:#1b1a17;margin:0 0 12px">문장을 쓰는 사람에서 기준을 만드는 사람으로</div>
+      <p style="font: 400 15px/1.8 'Pretendard Variable',sans-serif; color: #6b6960; margin: 0 0 34px">10년, 콘텐츠 제작에서 서비스와 브랜드를 만드는 사람으로 진화했습니다.</p>
+      
+      <div style="display:flex;flex-direction:column;gap:34px">
+        <div style="display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-start">
+          <div style="flex:0 0 58px;font:500 13px/1 'Pretendard Variable',sans-serif;color:#a8a49a;padding-top:7px">01</div>
+          <div style="flex:1 1 460px;min-width:0">
+            <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin-bottom:10px"><b>2015–2017 · 인턴·사원</b></div>
+            <div style="font:600 {{ arcSize }}/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:10px">직접 씁니다.</div>
+            <p style="margin: 0; font: 400 14.5px/1.85 'Pretendard Variable',sans-serif; color: #4c4a44; width: 100%; height: 100%">중앙일보 창간 50주년 TF팀 인턴으로 시작해 모바일서비스팀에서 'Our History' 콘텐츠를 제작했습니다. <br>취재, 기사 작성, 디자이너와의 편집 커뮤니케이션, 매체별 리라이팅을 했습니다.</p>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-start;padding-top:34px;border-top:1px solid #e3e0d8">
+          <div style="flex:0 0 58px;font:500 13px/1 'Pretendard Variable',sans-serif;color:#a8a49a;padding-top:7px">02</div>
+          <div style="flex:1 1 460px;min-width:0">
+            <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin-bottom:10px"><b>2017–2022 · 차이나랩 에디터·CP</b></div>
+            <div style="font:600 {{ arcSize }}/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:10px">매일 검증받고, 먼저 제안합니다.</div>
+            <p style="margin: 0; font: 400 14.5px/1.85 'Pretendard Variable',sans-serif; color: #4c4a44; height: 100%; width: 100%">네이버 메인 주제판(중국) 편성 담당자로 시간대별 잘 팔리는 콘텐츠를 연구하고, 타겟 유저의 흥미와 라이프스타일에 맞는 콘텐츠를 제안했습니다. 23글자 헤드라인과 썸네일의 A/B 테스트를 통해 실시간으로 지표 변화를 체감하며 '잘 팔리는 콘텐츠', '눈을 사로 잡는 카피'에 대한 암묵지를 쌓았습니다.</p>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:14px 32px;align-items:flex-start;padding-top:34px;border-top:1px solid #e3e0d8">
+          <div style="flex:0 0 58px;font:500 13px/1 'Pretendard Variable',sans-serif;color:#275c4a;padding-top:7px">03</div>
+          <div style="flex:1 1 460px;min-width:0">
+            <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#275c4a;margin-bottom:10px"><b>2023–현재 · 뉴스제작팀장</b></div>
+            <div style="font:600 {{ arcSize }}/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:10px">기준을 만듭니다.</div>
+            <p style="margin: 0; font: 400 14.5px/1.85 'Pretendard Variable',sans-serif; color: #4c4a44; width: 100%; height: 100%">프로젝트 수주와 제안서 작성, 업무 플로우 설계, 템플릿과 표기 원칙을 수립합니다. 2023년(AI가 없던 시기)에는&nbsp;코딩 기술자를 섭외해 업무 자동화를 구축하고 소요시간을 60%이상 단축했습니다. 운영 중인 서비스의 브랜딩을 위해 톤앤매너 확립, 디자인 일관성 구축, 사업처 발굴, 제휴제안 등 '돈 버는 플랫폼'으로 키워가고 있습니다.&nbsp;</p>
+          </div>
+        </div>
+      </div><div style="display:flex;flex-direction:column;gap:14px;margin-top:36px;padding:26px 28px;border-radius:14px;background:#fdfdfc">
+        
+        
+        <p style="margin:0;font:400 14.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833">프로젝트별 업무 방식을 0에서부터 구축하고 업무 플로우를 설계할 수 있습니다.</p>
+      </div>
+    
+    </div>
+
+
+    <div style="padding:60px 40px 0">
+      <h2 style="font:600 {{ secSize }}/1.3 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 14px">What I Do</h2>
+      <p style="font: 400 15px/1.8 'Pretendard Variable',sans-serif; color: #2E5934; margin: 0 0 28px">언론사 인턴으로 시작해 기사작성, 콘텐츠 기획, 콘텐츠 비즈니스 프로젝트 총괄, 브랜드 네이밍, 서비스 기획까지&nbsp;<br><b>본인 기여도가 80% 이상</b>인 대표 프로젝트</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px">
+        <div onClick="{{ openC2 }}" style="flex:1 1 300px;border-radius:14px;background:#f5f3ee;padding:26px;cursor:pointer" style-hover="background:#eeebe3">
+          <div style="font:600 20px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:12px">이름을 짓고, 7만 명을 모으고, 매출을 만들기까지</div>
+          <div style="font:400 13.5px/1.75 'Pretendard Variable',sans-serif;color:#6b6960;margin-bottom:20px">중국여행자커뮤니티 '중여커'의 제안·네이밍·런칭·운영을 총괄했습니다.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">네이밍</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">커뮤니티</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">수익화</span>
+          </div>
+        </div>
+        <div onClick="{{ openC3 }}" style="flex:1 1 300px;border-radius:14px;background:#f5f3ee;padding:26px;cursor:pointer" style-hover="background:#eeebe3">
+          <div style="font:600 20px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:12px">불편함을 해소한 직관적인 서비스</div>
+          <div style="font:400 13.5px/1.75 'Pretendard Variable',sans-serif;color:#6b6960;margin-bottom:20px">중국 여행을 앞둔 한국인 커뮤니티의 버티컬 서비스 '중여커 지도'<br>분류 체계와 표기 기준을 세우고 서비스를 직접 기획했습니다.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">서비스 기획</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">IA</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">표기 기준</span>
+          </div>
+        </div>
+        <div onClick="{{ openC1 }}" style="flex:1 1 300px;border-radius:14px;background:#f5f3ee;padding:26px;cursor:pointer" style-hover="background:#eeebe3">
+          <div style="font:600 20px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:12px">제목 하나로 조회수 3배</div>
+          <div style="font:400 13.5px/1.75 'Pretendard Variable',sans-serif;color:#6b6960;margin-bottom:20px">네이버 메인 중국 주제판 편성·헤드라인을 약 3년간 직접 담당했습니다.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">헤드라인</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">A/B 검증</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">데이터</span>
+          </div>
+        </div>
+        <div onClick="{{ openC6 }}" style="flex:1 1 300px;border-radius:14px;background:#f5f3ee;padding:26px;cursor:pointer" style-hover="background:#eeebe3">
+          <div style="font:600 20px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:12px">한 문장으로 51만 명을 멈춰 세우다</div>
+          <div style="font:400 13.5px/1.75 'Pretendard Variable',sans-serif;color:#6b6960;margin-bottom:20px">중앙일보 'Our History' 카드뉴스를 발제부터 제목·본문까지 직접 구성했습니다.<br>플랫폼 특성에 맞게 리라이팅해 콘텐츠 바이럴을 주도했습니다.</div><div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">카드뉴스</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">발제</span>
+            <span style="border-radius:999px;background:#e7e4dc;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:7px 11px">바이럴</span>
+          </div>
+          
+        </div>
+        
+      </div>
+      <button type="button" onClick="{{ goCases }}" style="margin-top:18px;border:0;border-radius:999px;background:#f1efe9;color:#1b1a17;font:500 13px/1 'Pretendard Variable',sans-serif;padding:14px 22px;cursor:pointer" style-hover="background:#e3e0d7">프로젝트 6건 전체 보기</button>
+    </div>
+
+    <div style="padding:60px 40px 0">
+      <h2 style="font:600 {{ secSize }}/1.3 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 14px">What I Can</h2>
+      <p style="font: 400 15px/1.8 'Pretendard Variable',sans-serif; color: #315F3F; margin: 0 0 30px; max-width: 80ch">페인 포인트를 발견해 서비스로 만들고, 병목 현상을 해결하며 프로젝트의 시작부터 끝을 책임졌습니다</p>
+      <div style="overflow:hidden"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;margin:-1px 0 0 -1px">
+        <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:24px 28px">
+          <div style="font:600 16px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">브랜드 커뮤니케이션 전략</div>
+          <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">중국 무비자 시행 18일 만에 커뮤니티 개설을 제안·런칭, 21개월 만에 회원 73,600명을 달성했습니다.</p>
+        </div>
+        <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:24px 28px">
+          <div style="font:600 16px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">브랜드 메시지 개발과 관리</div>
+          <p style="margin: 0; font: 400 13.5px/1.8 'Pretendard Variable',sans-serif; color: #6b6960; position: static">커뮤니티·연재·서비스의 정체성 문장과 톤을 설계하고, 팀원과 외부 필진이 함께 쓰는 환경에서 일관되게 유지했습니다.</p>
+        </div>
+        <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:24px 28px">
+          <div style="font:600 16px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">브랜드 스토리 개발</div>
+          <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">기업·도시·음식이라는 무형의 대상을 읽히는 이야기로 전환하고 '대륙의 신기업 열전' 등 유료 구독 콘텐츠로 판매되는 수준까지 검증했습니다.</p>
+        </div>
+        <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:24px 28px">
+          <div style="font:600 16px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">플랫폼·브랜드 네이밍</div>
+          <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">커뮤니티·앱·연재 시리즈 등 다양한 형태의 콘텐츠를<br>제작했고, 편성 전략 및 카피라이팅 개선으로 UB 18만 → 23만까지 올렸습니다.</p>
+        </div>
+        <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:24px 28px">
+          <div style="font:600 16px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">카피 검수와 가이드 운영</div>
+          <p style="margin: 0; font: 400 13.5px/1.8 'Pretendard Variable',sans-serif; color: #6b6960; width: 100%">32만 5,000건 규모 사전 콘텐츠의 표기 기준을 수립하고 검수까지 이어지는 워크 플로우를 세팅했습니다. 외부 필진 원고의 교열 등 일관된 톤앤매너를 구축해왔습니다.</p>
+        </div>
+        <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:24px 28px">
+          <div style="font:600 16px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">성과 측정과 개선</div>
+          <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">유입 경로·키워드 로그로 이탈 지점을 특정하고 콘텐츠·기능·제휴로 해소하는 절차를 21개월간 반복했습니다. 네이버 메인 주제판 운영으로 A/B 테스트를 500건 이상 했고 카피와 썸네일은 클릭률·도달률로 검증했습니다.</p>
+        </div>
+      </div></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:34px">
+        <span style="border-radius:999px;background:#f1efe9;font:500 12px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:9px 13px">기획자</span>
+        <span style="border-radius:999px;background:#f1efe9;font:500 12px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:9px 13px">디자이너</span>
+        <span style="border-radius:999px;background:#f1efe9;font:500 12px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:9px 13px">개발자</span>
+        <span style="border-radius:999px;background:#f1efe9;font:500 12px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:9px 13px">외부필진</span>
+        <span style="border-radius:999px;background:#f1efe9;font:500 12px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:9px 13px">비즈니스</span>
+        <span style="border-radius:999px;background:#f1efe9;font:500 12px/1 'Pretendard Variable',sans-serif;color:#4c4a44;padding:9px 13px">플랫폼사(네이버)</span>
+        <span style="font:400 12.5px/1.6 'Pretendard Variable',sans-serif;color:#8a877e">— 콘텐츠 팀 리더로 다직군 프로젝트를 리드했습니다</span>
+      </div>
+    </div>
+
+
+    <div style="padding:60px 40px">
+      <h2 style="font:600 {{ ctaSize }}/1.28 'Pretendard Variable',sans-serif;letter-spacing:-.035em;margin:0 0 16px;max-width:26ch">오너십을 갖고 모든 업무에 임합니다.</h2>
+      <p style="font: 400 15px/1.85 'Pretendard Variable',sans-serif; color: #28452A; margin: 0 0 26px">새로운 업무는 <b>'배운다'</b>, 늘 하던 업무는 <b>'완성도를 높인다'</b>는 애티튜드로 일합니다.<br><b>브랜드 카피라이팅｜브랜드 커뮤니케이션 전략</b><b>｜</b><b>PR</b><b>｜</b><b>대규모 콘텐츠 디렉팅</b><b>｜</b><b>기사 작성</b></p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+        <a href="mailto:lsseys1991@gmail.com" style="display:inline-block;border-radius:999px;background:#1b1a17;color:#fdfdfc;font:500 13px/1 'Pretendard Variable',sans-serif;padding:14px 22px" style-hover="background:#275c4a">이메일</a>
+        <span style="font:400 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;white-space:nowrap">010-9299-4971</span>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isCases }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:26px 40px 56px">
+      <h2 style="font:600 {{ secSize }}/1.3 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 30px">주요 프로젝트</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start">
+        <div style="flex:0 1 240px;display:flex;flex-direction:column;gap:2px">
+          <button type="button" onClick="{{ openC2 }}" style="text-align:left;border:0;border-radius:10px;background:{{ c2Bg }};padding:13px 14px;cursor:pointer;font-family:'Pretendard Variable',sans-serif" style-hover="background:#f5f3ee">
+            <span style="display:block;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:7px">01</span>
+            <span style="display:block;font:500 13.5px/1.5;color:{{ c2Fg }}">이름을 짓고, 7만 명을 모으고, <br>매출을 만들기까지</span>
+          </button>
+          <button type="button" onClick="{{ openC3 }}" style="text-align:left;border:0;border-radius:10px;background:{{ c3Bg }};padding:13px 14px;cursor:pointer;font-family:'Pretendard Variable',sans-serif" style-hover="background:#f5f3ee">
+            <span style="display:block;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:7px">02</span>
+            <span style="display:block;font:500 13.5px/1.5;color:{{ c3Fg }}">불편함을 해소한 직관적인 서비스</span>
+          </button>
+          <button type="button" onClick="{{ openC4 }}" style="text-align:left;border:0;border-radius:10px;background:{{ c4Bg }};padding:13px 14px;cursor:pointer;font-family:'Pretendard Variable',sans-serif" style-hover="background:#f5f3ee">
+            <span style="display:block;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:7px">03</span>
+            <span style="display:block;font:500 13.5px/1.5;color:{{ c4Fg }}">기사 쓰기를 넘어, 클릭하게 만들기</span>
+          </button>
+          <button type="button" onClick="{{ openC5 }}" style="text-align:left;border:0;border-radius:10px;background:{{ c5Bg }};padding:13px 14px;cursor:pointer;font-family:'Pretendard Variable',sans-serif" style-hover="background:#f5f3ee">
+            <span style="display:block;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:7px">04</span>
+            <span style="display:block;font:500 13.5px/1.5;color:{{ c5Fg }}">5년 연속, 네이버 콘텐츠 프로젝트 완수</span>
+          </button>
+          <button type="button" onClick="{{ openC1 }}" style="text-align:left;border:0;border-radius:10px;background:{{ c1Bg }};padding:13px 14px;cursor:pointer;font-family:'Pretendard Variable',sans-serif" style-hover="background:#f5f3ee">
+            <span style="display:block;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:7px">05</span>
+            <span style="display:block;font:500 13.5px/1.5;color:{{ c1Fg }}">제목 하나로 조회수 3배</span>
+          </button>
+          <button type="button" onClick="{{ openC6 }}" style="text-align:left;border:0;border-radius:10px;background:{{ c6Bg }};padding:13px 14px;cursor:pointer;font-family:'Pretendard Variable',sans-serif" style-hover="background:#f5f3ee">
+            <span style="display:block;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:7px">06</span>
+            <span style="display:block;font:500 13.5px/1.5;color:{{ c6Fg }}">한 문장으로 51만 명을 멈춰 세우다</span>
+          </button>
+        </div>
+
+        <div style="flex:1 1 430px;min-width:0">
+          <h3 style="font:600 {{ caseTitleSize }}/1.32 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 12px">{{ caseTitle }}</h3>
+          <p style="font: 400 13px/1.75 'Pretendard Variable',sans-serif; color: #3B7545; margin: 0 0 30px; position: relative; white-space: pre-line; text-decoration-line: none">{{ caseRole }}</p><p></p>
+
+          <sc-if value="{{ isC1 }}" hint-placeholder-val="{{ true }}">
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">네이버 메인에 노출되는 판을 매일 셋업하고 이슈에 즉시 대응하는 일이었습니다. 디바이스에 관계없이 잘리지 않는 글자 수, 최대 23자. 이 안에서 눈길을 잡지 못하면 그 콘텐츠는 그것으로 끝입니다.</p>
+            <p style="font:500 18px/1.75 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin:0 0 22px;padding:22px 24px;border-radius:14px;background:#f5f3ee">제목을 쓸 때마다 스스로에게 같은 질문을 던졌습니다. "너라면 이걸 누르지 않고는 못 배기겠니?"</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 34px">이용자의 입장에 서서, 관심·감정·기억 중 무엇을 건드릴지 정하고 그것 하나만 23자에 담았습니다. 결과는 실시간 PV와 클릭 데이터로 즉시 확인됐습니다. 오전 내내 1,000 단위에 머물던 PV가 제목을 고친 뒤 1만 단위로 뛰어올랐습니다. 콘텐츠는 그대로였습니다. 바뀐 건 문장 하나였습니다.</p>
+
+            <div style="display:flex;flex-wrap:wrap;gap:26px;align-items:flex-start;border-radius:14px;background:#f5f3ee;padding:26px;margin:0 0 34px">
+              <div style="flex:0 0 210px;max-width:100%;border-radius:12px;overflow:hidden;background:#fff;border:1px solid #e3e0d8">
+                <div role="img" aria-label="네이버 모바일 메인 중국 주제판 화면" style="width:100%;aspect-ratio:706/1233;background-image:url(assets/naver-china-panel.png);background-size:cover;background-position:center top"></div>
+              </div>
+              <div style="flex:1 1 260px;min-width:220px">
+                <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">편성 화면</div>
+                <div style="font:600 18px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17;margin-bottom:12px">네이버 모바일 메인 · 중국 주제판</div>
+                <p style="margin:0;font:400 14px/1.85 'Pretendard Variable',sans-serif;color:#6b6960">매일 이 화면의 코너 구성과 제목을 직접 편성했습니다. 비즈 라운지, Stock &amp; Money 등 코너 단위로 콘텐츠를 배치하고, 각 카드의 제목을 23자 안에서 다시 썼습니다.</p>
+              </div>
+            </div>
+
+            <div style="font: 500 12.5px/1 'Pretendard Variable',sans-serif; color: #51A679; margin-bottom: 16px; font-size: 15px">실제로 고쳐 쓴 제목들</div>
+            <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:34px">
+              <sc-for list="{{ redlines }}" as="r" hint-placeholder-count="4">
+                <div style="border-radius:14px;background:#f5f3ee;padding:22px">
+                  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-bottom:14px">
+                    <span style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#6b6960">{{ r.label }}</span>
+                    <span style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#275c4a">{{ r.pv }}</span>
+                  </div>
+                  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px">
+                    <div style="display:flex;flex-direction:column;border-radius:12px;background:#fff;border:1px solid #e3e0d8;overflow:hidden">
+                      <div style="display:flex;align-items:center;gap:9px;padding:14px 16px 12px">
+                        <span style="flex:0 0 auto;width:20px;height:20px;border-radius:999px;background:#e7e4dc;color:#8a877e;font:600 11px/20px 'Pretendard Variable',sans-serif;text-align:center">A</span>
+                        <span style="font:500 11px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a">원안</span>
+                      </div>
+                      <div style="padding:0 16px 14px;font:400 14.5px/1.6 'Pretendard Variable',sans-serif;color:#8a877e;word-break:keep-all">{{ r.before }}</div>
+                      <div role="img" aria-label="{{ r.before }}" style="width:100%;margin-top:auto;filter:saturate(.35);opacity:.75;aspect-ratio:{{ r.arBefore }};background-image:url({{ r.imgBefore }});background-size:100% auto;background-position:center top;background-repeat:no-repeat"></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;border-radius:12px;background:#fff;border:1px solid #305F32;overflow:hidden">
+                      <div style="display:flex;align-items:center;gap:9px;padding:14px 16px 12px">
+                        <span style="flex:0 0 auto;width:20px;height:20px;border-radius:999px;background:#305F32;color:#fff;font:600 11px/20px 'Pretendard Variable',sans-serif;text-align:center">B</span>
+                        <span style="font:500 11px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#305F32">발행안 · 채택</span>
+                      </div>
+                      <div style="padding:0 16px 14px;font:600 16px/1.6 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;word-break:keep-all">{{ r.after }}</div>
+                      <div role="img" aria-label="{{ r.after }}" style="width:100%;margin-top:auto;aspect-ratio:{{ r.arAfter }};background-image:url({{ r.imgAfter }});background-size:100% auto;background-position:center top;background-repeat:no-repeat"></div>
+                    </div>
+                  </div>
+                  <div style="display:flex;align-items:flex-start;gap:10px;margin-top:16px">
+                    <span style="flex:0 0 auto;font:500 11px/1.85 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a">WHY B</span>
+                    <span style="font:400 13px/1.85 'Pretendard Variable',sans-serif;color:#6b6960">{{ r.note }}</span>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:28px 44px;margin-bottom:28px">
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">18만 → 23만</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">UB (편성 개선 후)</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">3년</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">직접 운영 기간</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">23자</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">디바이스 무관 제한선</div></div>
+            </div>
+            <p style="font: 400 15.5px/1.9 'Pretendard Variable',sans-serif; color: #3a3833; margin: 0; width: 100%; height: 100%">사드·한한령·코로나19로 반중 정서가 극에 달한 시기에 운영됐음에도, 국내에서 양질의 중국 정보를 제공하는 가장 큰 채널로 자리잡았습니다. 썸네일 크롭(인물 시선 방향, 배경 컬러, 확대 비율)에 따른 도달률 차이까지 데이터로 검증했습니다.</p>
+
+            <div style="margin-top:40px;padding-top:34px;border-top:1px solid #e7e4dd">
+              <div style="font: 500 12.5px/1 'Pretendard Variable',sans-serif; color: #51A679; margin-bottom: 14px; font-size: 15px">판 분석과 방향성 제안</div>
+              <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 26px">제목을 쓰는 일과 함께, 판 전체를 정기적으로 진단하고 다음 분기의 방향을 제안하는 리포트를 직접 작성했습니다. 월간·분기 단위로 지표를 트래킹하고, 편성 의도와 실제 반응이 맞았는지 확인해 개편안으로 연결했습니다.</p>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;margin:-1px 0 26px -1px;clip-path:inset(1px 0 0 1px)">
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">지표 트래킹</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">판 설정자·UB·PV·클릭 수를 일별로 축적해 요일별 패턴과 하락 구간을 특정했습니다. 개편 전후 수치를 비교해 변화의 원인을 편성·이슈·외부 유입으로 나눠 설명했습니다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">편성 의도 검증</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">요일별 1라인에 배치한 코너와 그날 조회수 상위 콘텐츠를 대조해, 배치 의도가 실제 반응과 일치했는지 매주 확인했습니다. 어긋난 요일은 소재와 무게감을 바꿔 재편성했습니다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">콘텐츠·필진 점검</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">Best·Worst 콘텐츠와 댓글 반응을 사례로 정리하고, 필진 30여 명과 제휴처 36곳의 호응도를 코너 단위로 평가해 섭외·조정 기준을 만들었습니다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">이용자 조사와 VOC</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">이용자 479명 설문으로 접근 시간대와 선호 카테고리를 확인하고, 주관식 의견을 30개 키워드로 분류해 수요와 개선점을 콘텐츠 과제로 옮겼습니다.</p>
+                </div>
+              </div>
+              <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0">결론은 항상 다음 분기 실행안으로 냈습니다. 필진 재편, 전문성 콘텐츠와 다양성 콘텐츠의 분리 운영, 요일별 신선감을 만드는 배치, 오전·오후 판 운영 가이드라인까지 제안하고 실행에 반영했습니다.</p>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isC2 }}" hint-placeholder-val="{{ false }}">
+            <p style="font:600 24px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.03em;color:#1b1a17;margin:0 0 26px">무비자 시행 18일 만에, 존재하지 않던 시장의 첫 플랫폼을 열다</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px 0;margin:0 0 32px -1px;clip-path:inset(0 0 0 1px)">
+            <div style="border-left:1px solid #e7e4dd;padding:0 20px">
+              <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:9px">기간</div>
+              <div style="font:400 13.5px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">2024.11 – 현재 <br>(21개월, 진행 중)</div>
+            </div>
+            <div style="border-left:1px solid #e7e4dd;padding:0 20px">
+              <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:9px">역할</div>
+              <div style="font:400 13.5px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">사업 기획 제안 · 브랜드 네이밍 · 초기 세팅 및 그로스 총괄</div>
+            </div>
+            <div style="border-left:1px solid #e7e4dd;padding:0 20px">
+              <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:9px">기여도</div>
+              <div style="font:400 13.5px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">80% (배너 디자인 · 카피라이팅 100%)</div>
+            </div>
+            <div style="border-left:1px solid #e7e4dd;padding:0 20px">
+              <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:9px">결과</div>
+              <div style="font:400 13.5px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">회원 7만 명 · OTA 및 결제/항공사 제휴 인바운드 6개사</div>
+            </div>
+            </div>
+
+            <div style="border-radius:14px;overflow:hidden;background:#e7e4dc;margin-bottom:40px">
+              <video ref="{{ mapVideo }}" src="assets/jungyeokeo-community.mp4" autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" defaultMuted="{{ true }}" playsInline="{{ true }}" preload="auto" style="width:100%;display:block"></video>
+            </div>
+
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">1. 문제 정의</div>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">2024년 11월, 중국이 한국인 무비자 입국을 시행했다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">수요는 즉시 열렸지만, 공급은 0이었다. 일본이나 동남아와 달리 중국은 한 번도 무비자였던 적이 없는 여행지였고, 그래서 한국어로 된 중국 여행 정보를 모아둔 플랫폼이 아예 존재하지 않았다. 정보가 부족한 게 아니라, 정보를 모을 그릇이 없었다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">동시에 그 공백을 메울 자산은 이미 우리 회사 안에 있었다. 중국 현지 취재력, 중국 비즈니스 네트워크, 중국어 가능 인력. 다른 여행 플랫폼이 중국을 '여러 목적지 중 하나'로 다룰 때, 우리는 중국만 다뤄온 조직이었다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 40px">그래서 내가 정의한 문제는 "중국 여행 정보가 없다"가 아니라 <b>"이 시장을 선점할 수 있는 창이 몇 달밖에 열려 있지 않다"</b>였다. 완성도보다 속도가 중요한 국면이라고 판단했고, 사업 기획안을 제출해 무비자 시행 18일 만에 커뮤니티를 열었다.</p>
+
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">2. 접근</div>
+            <figure style="margin:0 0 28px">
+              <div style="border:1px solid #e7e4dd;border-radius:12px;background:#fff;height:420px;overflow-y:auto;overflow-x:hidden">
+                <img src="assets/idea-doc.png" alt="2025 차이나랩 사업 아이디어 기획서" style="width:100%;display:block">
+              </div>
+              <figcaption style="font:400 12.5px/1.7 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:9px">최초 제출한 기획서 「중국관광 지도형 콘텐츠 ‘원샷 중국여행(가제)’ 앱 개발」 — 스크롤해 전문 확인</figcaption>
+            </figure>
+            <p style="font:600 19px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17;margin:0 0 20px">처음 제안한 건 지도였다. 순서를 바꿨다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">첫 기획안은 <b>'중국판 푸딘코 지도'</b>였다. 여행 콘텐츠는 결국 지도에서 시작한다고 봤고, 우리 취재력과 현지 네트워크를 쏟아부어 중국의 미식과 엔터를 한눈에 보는 지도를 만들고 싶었다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">그런데 실행 직전에 순서를 뒤집었다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 26px">지도는 <b>'무엇을 찾을지 아는 사람'</b>을 위한 도구다. 무비자 직후의 사용자는 그 단계가 아니었다. 비자가 정말 필요 없는지, 알리페이는 어떻게 쓰는지, 입국카드는 뭔지 — 아직 질문 단계에 있는 사람들이었다. 이들에게 지금 필요한 건 정리된 지도가 아니라 물어볼 곳, 그리고 정확한 답이 돌아오는 곳이라고 판단했다.</p>
+            <p style="font:500 18px/1.75 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin:0 0 26px;padding:22px 24px;border-radius:14px;background:#f5f3ee">그래서 지도를 유보하고 커뮤니티를 먼저 열었다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 40px">1년 뒤, 이 판단을 검증할 수 있었다. 커뮤니티에 쌓인 질문 패턴이 결국 "어디 가지 / 뭐 먹지"로 수렴했고, 그 시점에 지도를 버티컬 서비스로 출시했다. 처음 가설이 틀렸던 게 아니라 순서가 틀렸던 것이었고, 커뮤니티가 지도의 콘텐츠와 수요를 동시에 만들어준 셈이 됐다.</p>
+
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">3. 실행</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;margin:-1px 0 32px -1px;clip-path:inset(1px 0 0 1px)">
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="display:inline-block;font:600 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.04em;color:#51A679;background:#eef5ef;border-radius:999px;padding:6px 11px;margin-bottom:11px">네이밍</div>
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">한국어와 중국어 양쪽에서 읽히게</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">기획안에 쓴 이름 '중여커(중국여행자커뮤니티)'는 중국어 발음의 '중유커(中国游客, 중국 여행객)'와 유사하다. 한국·중국 어느 쪽에서 들어도 여행 서비스임이 직관적으로 전달된다고 판단해 그대로 확정하고, 설립과 함께 상표권 등록을 진행했다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="display:inline-block;font:600 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.04em;color:#51A679;background:#eef5ef;border-radius:999px;padding:6px 11px;margin-bottom:11px">디자인</div>
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">기다리기보다 직접 만들고 빠르게 교체</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">인하우스 디자이너 부재라는 제약 아래에서 초기 메인 페이지와 배너는 외주로 진행했으나, 이후의 배너 이미지 디자인과 카피라이팅은 직접 했다. 외부 리소스를 기다리며 속도를 잃는 것보다, 내가 만들고 빠르게 교체하는 편이 선점 국면에 맞다고 봤다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="display:inline-block;font:600 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.04em;color:#51A679;background:#eef5ef;border-radius:999px;padding:6px 11px;margin-bottom:11px">콘텐츠</div>
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">가장 잘하는 것으로 모은다</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">'정확한 정보'를 소구점으로 진짜 자산이 될 정보는 '간편 정복' 가이드북 시리즈로 구조화해 지속 발행했다. 파일럿은 직접 기획했다. 유입 캠페인의 소구점을 할인이나 이벤트가 아니라 '간편정복 가이드북 무료 배포'로 잡은 건 의도적이었다. 우리가 가장 잘하는 것으로 사람을 모아야 남는 회원이 된다고 판단했다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="display:inline-block;font:600 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.04em;color:#51A679;background:#eef5ef;border-radius:999px;padding:6px 11px;margin-bottom:11px">유입</div>
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">데려오기 전에 답할 사람을 심는다</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">매체를 넘나들며 구글 애즈·메타 광고 집행, 중앙그룹 사내 인트라넷 이벤트, 커뮤니티 내부 이벤트를 병행했다. 여기에 더해 타 카페에서 '중국 여행'·'중국 현지 거주자'를 직접 서칭해 컨택했고, 이들을 초기 콘텐츠 집적원이자 홍보 통로로 활용했다. 광고로 사람을 데려오는 동시에, 답변할 사람을 먼저 심어둔 것이다.</p>
+                </div>
+            </div>
+
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">직접 기획·제작한 회원 전용 콘텐츠</div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:12px">
+              <a href="https://naver.me/5ECDez3X" target="_blank" rel="noopener" style="display:block;border-radius:12px;overflow:hidden;background:#e7e4dc" style-hover="opacity:.88">
+                <div role="img" aria-label="중국 술 뭐 마시지? 백주 가이드" style="width:100%;aspect-ratio:4/5;background-image:url(assets/jyk-content3.png);background-size:cover;background-position:center"></div>
+              </a>
+              <a href="https://naver.me/F7FhXcOE" target="_blank" rel="noopener" style="display:block;border-radius:12px;overflow:hidden;background:#e7e4dc" style-hover="opacity:.88">
+                <div role="img" aria-label="루이싱커피 메뉴 가이드" style="width:100%;aspect-ratio:4/5;background-image:url(assets/jyk-content1.png);background-size:cover;background-position:center"></div>
+              </a>
+              <a href="https://cafe.naver.com/f-e/cafes/31335153/articles/707?boardtype=I&amp;menuid=107&amp;referrerAllArticles=false" target="_blank" rel="noopener" style="display:block;border-radius:12px;overflow:hidden;background:#e7e4dc" style-hover="opacity:.88">
+                <div role="img" aria-label="상하이 간편정복 가이드북" style="width:100%;aspect-ratio:4/5;background-image:url(assets/jyk-content2.png);background-size:cover;background-position:center top"></div>
+              </a>
+              <a href="https://naver.me/xvCAzr25" target="_blank" rel="noopener" style="display:block;border-radius:12px;overflow:hidden;background:#e7e4dc" style-hover="opacity:.88">
+                <div role="img" aria-label="충칭 간편정복 가이드북" style="width:100%;aspect-ratio:4/5;background-image:url(assets/jyk-content4.png);background-size:cover;background-position:center top"></div>
+              </a>
+            </div>
+            <p style="font:400 12.5px/1.75 'Pretendard Variable',sans-serif;color:#8a877e;margin:0 0 40px">백주 가이드 · 루이싱커피 메뉴 · 상하이 간편정복 · 충칭 간편정복 — 이미지를 누르면 원문으로 이동합니다</p>
+
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">4. 결과</div>
+            <div style="display:flex;flex-wrap:wrap;gap:28px 44px;margin:0 0 26px">
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">7만 명</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">회원 (2024.11 개설, 2년 미만)</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">6개사</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">OTA·항공·결제사 인바운드</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">버티컬 1건</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">검증된 수요 기반 지도 서비스</div></div>
+            </div>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">유니온페이, 동방항공, 트립닷컴, 알리익스프레스 트립, 마이리얼트립, 여행가자 등 OTA·항공·결제사로부터 광고 집행 요청 인바운드가 들어왔고, 커뮤니티에서 검증된 수요를 근거로 지도 서비스를 버티컬로 출시했다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 40px">다만 목표는 달성하지 못했다. 상반기까지 8만 명이 목표였고, 지도 서비스를 통해 추가 모객을 끌어올 계획이었으나 미달했다.</p>
+
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">5. 레슨런</div>
+            <p style="font:600 19px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17;margin:0 0 20px">게시했다고 전달된 것은 아니다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 20px">목표 미달의 원인을 뜯어보다 발견한 건, 광고 효율이나 콘텐츠 양의 문제가 아니었다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 26px">사람들은 '게시된' 정보를 읽지 않는다. 공지에 상시 떠 있는 내용을 그대로 다시 묻고, 카페 내 검색어 한 번이면 나오는 걸 또 묻는다. 우리는 정보를 충분히 만들었지만, 그 정보가 필요한 사람에게 필요한 순간에 다시 나타나게 하는 구조를 만들지 않았다. 콘텐츠의 문제가 아니라 바이럴과 전달 구조의 문제였다.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;margin:-1px 0 32px -1px;clip-path:inset(1px 0 0 1px)">
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">그래서 지금 하고 있는 것</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">매일 올라오는 질문과 댓글을 AI로 하나의 콘텐츠로 재편집해 발행한다. 사용자가 이미 던진 질문이 곧 가장 잘 읽히는 콘텐츠이기 때문이다. 여기서 한 달 단위로 '가장 많이 나온 질문과 답변'을 다시 추려, 사람들이 중국 여행에서 반복적으로 넘지 못하는 장벽이 무엇인지 지표로 만든다.</p>
+                </div>
+                <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                  <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:8px">그다음</div>
+                  <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">그 장벽의 상당수는 결국 중국어다. 앱 사용, 예약, 현지 컨택. 이 지점을 B2B 서비스로 확장하는 것이 다음 목표다. 커뮤니티에서 나온 질문 데이터가 그대로 B2B 제품의 요구사항 정의서가 되는 구조를 만들려 한다.</p>
+                </div>
+            </div>
+            <p style="font:500 18px/1.75 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin:0 0 26px;padding:22px 24px;border-radius:14px;background:#f5f3ee;margin:0">사용자는 정보를 찾아오지 않는다. 마주치게 만들어야 한다. 그리고 사용자가 반복해서 묻는 질문은 실패의 신호가 아니라, 다음 제품의 스펙이다.</p>
+          </sc-if>
+
+          <sc-if value="{{ isC3 }}" hint-placeholder-val="{{ false }}">
+            <p style="font: 400 15.5px/1.9 'Pretendard Variable',sans-serif; color: #3a3833; margin: 0 0 30px; font-size: 16px"><b>중국에서는 구글 지도가 제대로 작동하지 않습니다. </b><br><br>현지 지도 앱은 전부 중국어라, 한국인 여행자는 가고 싶은 식당 앞에서 예약도 길찾기도 어렵습니다. 이 불편함을 해소하기 위해 <b>버티컬 서비스</b>를 만들었습니다. 한국어로 지도를 만들고, 한국인들의 선호도가 높은 식당과 카페, 마사지 업체를 등록했습니다. <br><br>가고 싶은 곳의 중국어 명칭을 몰라 메모장에 중국어를 써둔 후 '복붙'하는 회원들을 위해 지도 안에 고덕/바이두 지도로 바로 연결되는 버튼을 만들었고, 일부 유명 식당의 경우 위챗 예약까지 이 페이지 안에서 가능하도록 디벨롭했습니다.&nbsp;</p>
+            <div style="border-radius:14px;overflow:hidden;background:#e7e4dc;margin-bottom:12px">
+              <video ref="{{ mapVideo }}" src="assets/zhongyouke-map.mp4" autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" defaultMuted="{{ true }}" playsInline="{{ true }}" preload="auto" style="width:100%;display:block"></video>
+            </div>
+            <div style="border-radius:14px;overflow:hidden;background:#e7e4dc;margin-bottom:12px">
+              <video ref="{{ mapVideo }}" src="assets/zhongyouke-detail.mp4" autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" defaultMuted="{{ true }}" playsInline="{{ true }}" preload="auto" style="width:100%;display:block"></video>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:32px">
+              <span style="font:400 12.5px/1.75 'Pretendard Variable',sans-serif;color:#8a877e">장소 팝업에서 후기 검색·위챗 예약으로, 그리고 고덕·바이두·애플 지도 앱으로 바로 넘기는 연결 구조</span>
+              <a href="https://www.zhongyouke.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#eef1ec;color:#275c4a;font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:9px 14px;white-space:nowrap" style-hover="background:#275c4a;color:#fdfdfc"><span aria-hidden="true" style="font-size:11px">↗</span>zhongyouke.com</a>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:26px;margin-bottom:32px">
+              <div>
+                <div style="font:600 16px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">브랜드 표기를 정했습니다</div>
+                <p style="margin:0;font:400 14.5px/1.9 'Pretendard Variable',sans-serif;color:#4c4a44">원음에 가깝게 갈지, 부르기 쉽게 갈지, 이미 퍼진 표기를 따를지를 브랜드마다 판단했고, 한 번 정한 표기는 지도·카페·콘텐츠 전체에서 동일하게 유지했습니다.</p>
+              </div>
+              <div style="padding-top:26px;border-top:1px solid #eae7e0">
+                <div style="font:600 16px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">장소에서 일어나는 연쇄적인 행동을 서비스로 연결했습니다</div>
+                <p style="margin: 0; font: 400 14.5px/1.9 'Pretendard Variable',sans-serif; color: #305F32">Q: 헌지우이치엔 웨이팅 지옥이라는데 현지 번호 없는 외국인은 방법 없나요?<br>-&gt; 지도 내에서 지점 클릭하면 <b>웨이팅/예약 페이지로 넘어갈 수 있도록 설계<br></b><br>Q: '상하이 디즈니랜드 이날 사람 많을까요?'<br>-&gt;지도 내에서 <b>지난 5년간 상하이 디즈니랜드 날짜별 혼잡도 데이터 추출</b>해 반영하고, <b>당일 어트랙션 대기시간</b> 제공<br><br>Q: 중국어를 몰라서 업체명이 맞는건지도 모르겠어요<br>-&gt;내 동선 기준 가장 가까운 지점명까지 바로 복사할 수 있도록 <b>'고덕지도 실제 등록 상호명'</b>과 '<b>중국어 주소'</b> 제공&nbsp;&nbsp;</p>
+                <div style="border-radius:14px;overflow:hidden;background:#e7e4dc;margin-top:16px">
+                  <video ref="{{ mapVideo }}" src="assets/zhongyouke-chain.mp4" autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" defaultMuted="{{ true }}" playsInline="{{ true }}" preload="auto" style="width:100%;display:block"></video>
+                </div>
+              </div>
+              <div style="padding-top:26px;border-top:1px solid #eae7e0">
+                <div style="font:600 16px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:9px">검색어를 카피의 재료로 썼습니다</div>
+                <p style="margin:0;font:400 14.5px/1.9 'Pretendard Variable',sans-serif;color:#4c4a44"><b>"고덕지도 한글", "중국 여행 필수 앱", "위챗페이 등록", "알리페이 한국인" </b><br>사람들이 실제로 검색창에 치는 말을 그대로 서비스 언어로 가져왔습니다.</p>
+              </div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:28px 44px;margin-bottom:36px">
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">11,000명</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">누적 순방문자 (3개월)</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">4.5PV</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">세션당 페이지뷰</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">72%</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">모바일 비중</div></div>
+            </div>
+
+            <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin-bottom:16px">방문자 분석(2026년 5월 17일 서비스 시작~)</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px">
+              <div style="flex:1 1 150px;border-radius:14px;background:#f5f3ee;padding:20px"><div style="font:600 24px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.03em">3,465회</div><div style="font:400 12px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">최근 7일 합계 · 전기 대비 <span style="color:#275c4a">84% 증가</span></div></div>
+              <div style="flex:1 1 150px;border-radius:14px;background:#f5f3ee;padding:20px"><div style="font:600 24px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.03em">5,353회</div><div style="font:400 12px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">이번 달 누적</div></div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px">
+              <div style="flex:1 1 260px;border-radius:14px;background:#f5f3ee;padding:24px">
+                <div style="font:600 14.5px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:18px">어디서 찾아오나요? <span style="font-weight:400;color:#8a877e">(최근 365일)</span></div>
+                <div style="display:flex;flex-direction:column;gap:14px">
+                  <sc-for list="{{ mapSources }}" as="row" hint-placeholder-count="4">
+                    <div>
+                      <div style="display:flex;justify-content:space-between;gap:10px;margin-bottom:7px"><span style="font:400 12.5px/1.4 'Pretendard Variable',sans-serif;color:#4c4a44">{{ row.label }}</span><span style="font:600 12.5px/1.4 'Pretendard Variable',sans-serif">{{ row.value }}</span></div>
+                      <div style="height:6px;border-radius:999px;background:#e3e0d8"><div style="height:6px;border-radius:999px;background:#275c4a;width:{{ row.pct }}"></div></div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="flex:1 1 260px;border-radius:14px;background:#f5f3ee;padding:24px">
+                <div style="font:600 14.5px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.02em;margin-bottom:18px">어떤 페이지를 많이 보나요? <span style="font-weight:400;color:#8a877e">(최근 365일)</span></div>
+                <div style="display:flex;flex-direction:column;gap:14px">
+                  <sc-for list="{{ mapPages }}" as="row" hint-placeholder-count="5">
+                    <div>
+                      <div style="display:flex;justify-content:space-between;gap:10px;margin-bottom:7px"><span style="font:400 12.5px/1.4 'Pretendard Variable',sans-serif;color:#4c4a44">{{ row.label }}</span><span style="font:600 12.5px/1.4 'Pretendard Variable',sans-serif">{{ row.value }}</span></div>
+                      <div style="height:6px;border-radius:999px;background:#e3e0d8"><div style="height:6px;border-radius:999px;background:#7ea8c4;width:{{ row.pct }}"></div></div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+            <div style="font:500 15px/1 'Pretendard Variable',sans-serif;color:#51A679;margin-bottom:16px">회원의 불편을 지도에 반영한 방식</div>
+            <div style="overflow:hidden;margin:0 0 26px">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;margin:-1px 0 0 -1px">
+              <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">선별 기준</div>
+                <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin-bottom:9px">'한국인 데이터가 많은 곳'</div>
+                <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">후기 없는 곳은 일단 보류하는 한국인 여행객의 특성을 고려해 '한국인 데이터가 많은', '한국인에게 호평받은' 식당과 카페를 엄선해 제공했습니다.</p>
+              </div>
+              <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">페인포인트 → 기능</div>
+                <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin-bottom:9px">'상하이 디즈니 퇴장시 디디 탑승구역'</div>
+                <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">특히 불꽃놀이 이후 엄청난 인파가 몰려 택시 잡기도 어렵다는 상하이 디즈니랜드의 경우 이 구역을 지도에 넣어 많은 유입을 이끌었습니다. 회원들의 페인포인트를 서비스로 즉각 변환시킨 사례입니다.</p>
+              </div>
+              <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">제휴</div>
+                <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin-bottom:9px">현지 업체 20곳 직접 컨택</div>
+                <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">마사지, 헤드스파, 네일아트, 스냅촬영, 메이크업 등 현지 업체 20곳과 직접 컨택해 제휴를 맺고, 회원들에게 실질적인 혜택을 줄 수 있도록 구성했습니다.</p>
+              </div>
+              <div style="border-top:1px solid #e7e4dd;border-left:1px solid #e7e4dd;padding:22px 26px">
+                <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">수익화</div>
+                <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin-bottom:9px">'어느 지역에 어떤 공연이 있나요?'</div>
+                <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">공연 정보에 대한 허들이 높고, 예매를 위해 다시 한 번 검색창을 찾아야되는 회원들의 불편을 고려해 실 서비스에 트립닷컴 어필리에이트 링크를 넣어 회원들에게는 편의를, 회사는 수익 창출을 하는 구조로 만들었습니다.</p>
+              </div>
+              </div>
+            </div>
+            <p style="font:500 18px/1.75 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin:0;padding:22px 24px;border-radius:14px;background:#f5f3ee">'내가 중국여행을 간다면?'이라는 전제를 항상 염두에 두고 이 로그를 기준으로 카피와 서비스를 디벨롭했습니다.</p>
+          </sc-if>
+
+          <sc-if value="{{ isC4 }}" hint-placeholder-val="{{ false }}">
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 18px"><b>돈 되는 정보, 궁금했던 이야기</b>. 소재 발굴부터 취재, 기사 작성, 제목까지 완결된 콘텐츠를 만들었습니다.</p>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0">기사를 쓸 때 가장 먼저 자문하는 것이 바로 '가치가 있는 정보인가?', '흥미로운 정보인가?' 두 가지입니다. 시의성에 맞는 소재를 발굴하는 것부터 이것을 '많은 사람들이 읽고 싶게끔' 리드 문장을 쓰고, 눌러보고 싶은 제목을 고민하는 일을 꾸준히 해왔습니다.&nbsp;&nbsp;<br><br>유니콘 차이나(중앙일보), 대륙의 신기업 열전(더중앙플러스, 유료구독 콘텐츠) 이밖에 차이나랩 에디터로 3년간 매주 2건 이상 하나의 완결된 글을 작성했습니다. 네이버 지식백과에 납품한 '요리조리 중국레시피'(중국 가정식 150선)는 콘텐츠 네이밍을 제안해 시리즈명이 되었습니다.</p>
+            <a href="https://www.joongang.co.kr/reporter/2072" target="_blank" rel="noopener" style="display:flex;flex-wrap:wrap;align-items:center;gap:18px;border-radius:14px;background:#f5f3ee;padding:22px;color:inherit;margin:26px 0 0" style-hover="background:#eeebe3">
+              <div style="flex:1 1 240px;min-width:0">
+                <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin-bottom:10px">중앙일보 기자페이지</div>
+                <div style="font:600 18px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17">임서영 기자가 쓴 기사 전체 보기</div>
+              </div>
+              <span style="flex:0 0 auto;border-radius:999px;background:#1b1a17;color:#fdfdfc;font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:12px 18px;white-space:nowrap">joongang.co.kr/reporter/2072 →</span>
+            </a>
+            <a href="article-archive-standalone.html" style="display:flex;flex-wrap:wrap;align-items:center;gap:18px;border-radius:14px;background:#f5f3ee;padding:22px;color:inherit;text-decoration:none;margin:26px 0 0" style-hover="background:#eeebe3">
+              <div style="flex:1 1 240px;min-width:0">
+                <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin-bottom:10px">차이나랩 기사 아카이브 · 149편</div>
+                <div style="font:600 18px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17">제목은 곧 카피라이팅, 잘 쓴 제목의 결과는 조회수</div>
+              </div>
+              <span style="flex:0 0 auto;border-radius:999px;background:#1b1a17;color:#fdfdfc;font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:12px 18px;white-space:nowrap">전체 아카이브 보기 →</span>
+            </a>
+            <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin:32px 0 16px">대륙의 신기업 열전 — 더중앙플러스 유료구독 콘텐츠</div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px">
+              <sc-for list="{{ ucItems }}" as="uc" hint-placeholder-count="6">
+                <a href="{{ uc.url }}" target="_blank" rel="noopener" style="display:block;border-radius:12px;overflow:hidden;background:#e7e4dc" style-hover="opacity:.88">
+                  <div role="img" aria-label="{{ uc.title }}" style="width:100%;aspect-ratio:537/682;background-image:url({{ uc.img }});background-size:cover;background-position:center"></div>
+                </a>
+              </sc-for>
+            </div>
+
+            <p style="font:400 12.5px/1.75 'Pretendard Variable',sans-serif;color:#8a877e;margin:0"><br></p>
+          </sc-if>
+
+          <sc-if value="{{ isC5 }}" hint-placeholder-val="{{ false }}">
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 30px">매년 새로운 네이버 프로젝트를 수주하고 완수했습니다.&nbsp;</p>
+            <div style="border-radius:14px;background:#f5f3ee;padding:26px 28px 6px;margin:0 0 34px">
+              <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 22px">네이버 콘텐츠 프로젝트는 네이버 서비스에서 차이나랩이라는 회사가 제공할 수 있는 콘텐츠가 뭐가 있을지 계속 서칭, 디깅해 필요한 콘텐츠를 제안하고, 실제 콘텐츠를 구성해 납품하는 프로젝트입니다.</p>
+                <div style="overflow:hidden">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;margin:-1px 0 0 -1px">
+                  <div style="border-top:1px solid #e3e0d8;border-left:1px solid #e3e0d8;padding:22px 26px 24px">
+                    <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">운영 세팅</div>
+                    <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin-bottom:9px">제작 단위 1만 건 이상</div>
+                    <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">대부분의 콘텐츠의 제작 단위가 만 건 이상이므로, 이 과정에서 업무의 적절한 분배, 프리랜서의 고용과 운영, 검수 로직, 서비스 수주 부서와의 커뮤니케이션을 모두 세팅하고 진행했습니다.</p>
+                  </div>
+                  <div style="border-top:1px solid #e3e0d8;border-left:1px solid #e3e0d8;padding:22px 26px 24px">
+                    <div style="font:500 11.5px/1 'Pretendard Variable',sans-serif;letter-spacing:.06em;color:#a8a49a;margin-bottom:11px">효율화와 투명한 진행</div>
+                    <div style="font:600 15.5px/1.45 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin-bottom:9px">자동화 + 모두가 보는 진행률</div>
+                    <p style="margin:0;font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960">단순 반복 작업의 경우 일찌감치 코딩 기술자를 섭외해 업무 효율화를 극대화했으며, 구글 스프레드시트를 활용해 모든 업무 참여자가 서로의 진행률, 피드백 여부, 프로젝트의 나아가는 방향을 볼 수 있게 만들었습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e;margin:0 0 12px">프리랜서 업무 공유 플로우 — 실제 운영한 구글 스프레드시트</div>
+            <a href="assets/naver-project-sheet.mp4" target="_blank" rel="noopener" style="display:block;position:relative;border-radius:14px;overflow:hidden;background:#e7e4dc;border:1px solid #eae7e0;margin-bottom:12px" style-hover="opacity:.92">
+              <video src="assets/naver-project-sheet.mp4" autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" defaultMuted="{{ true }}" playsInline="{{ true }}" preload="auto" style="width:100%;display:block"></video>
+              <span style="position:absolute;right:12px;bottom:12px;font:500 11.5px/1 'Pretendard Variable',sans-serif;color:#fff;background:rgba(27,26,23,.72);border-radius:999px;padding:7px 12px">원본 크기로 보기</span>
+            </a>
+            <p style="font:400 12.5px/1.75 'Pretendard Variable',sans-serif;color:#8a877e;margin:0 0 30px">참여자별 진행률, 검수·피드백 상태, 프로젝트가 나아가는 방향을 한 시트에서 공유했습니다.</p>
+            <div style="display:flex;flex-direction:column;gap:2px;margin-bottom:30px">
+              <div style="display:flex;flex-wrap:wrap;gap:6px 24px;padding:15px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 52px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif;color:#275c4a">2022</span><span style="flex:1 1 280px;font:400 14px/1.7 'Pretendard Variable',sans-serif;color:#3a3833"><a href="https://terms.naver.com/~%EC%9A%94%EB%A6%AC%EC%A1%B0%EB%A6%AC-%EC%A4%91%EA%B5%AD-%EB%A0%88%EC%8B%9C%ED%94%BC-621MNpce0rpXwUY2KBCh3D" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#eef1ec;color:#275c4a;font:500 13px/1 'Pretendard Variable',sans-serif;padding:7px 12px;text-decoration:none;vertical-align:middle" style-hover="background:#275c4a;color:#fdfdfc"><span aria-hidden="true" style="font-size:11px">↗</span>네이버 지식백과 '요리조리 중국레시피'</a> — 실무자 시기, 콘텐츠명 제안·확정, 내부 템플릿 설계</span></div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px 24px;padding:15px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 52px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif;color:#275c4a">2023</span><span style="flex:1 1 280px;font:400 14px/1.7 'Pretendard Variable',sans-serif;color:#3a3833"><a href="https://zh.dict.naver.com/#/main" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#eef1ec;color:#275c4a;font:500 13px/1 'Pretendard Variable',sans-serif;padding:7px 12px;text-decoration:none;vertical-align:middle" style-hover="background:#275c4a;color:#fdfdfc"><span aria-hidden="true" style="font-size:11px">↗</span>네이버 어학사전 '중국 10대 방언 사전'</a> — 오디오·텍스트 병행 제작, 대량 콘텐츠 세팅<span style="display:block;height:8px"></span><a href="https://www.joongang.co.kr/article/25307762" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#eef1ec;color:#275c4a;font:500 13px/1 'Pretendard Variable',sans-serif;padding:7px 12px;text-decoration:none;vertical-align:middle" style-hover="background:#275c4a;color:#fdfdfc"><span aria-hidden="true" style="font-size:11px">↗</span>네이버 중국어 사전, 상하이 사투리도 음성으로 들려준다 [중앙일보]</a></span></div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px 24px;padding:15px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 52px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif;color:#275c4a">2024</span><span style="flex:1 1 280px;font:400 14px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">네이버 어학사전 '고유명사 사전' — 인물·기업·기관 32만 5,000건 세팅 및 번역, 고도화 설계<a href="https://blog.naver.com/dic_master/223902526168" target="_blank" rel="noopener" style="display:inline-block;margin-left:10px;border-radius:999px;background:#eaf1ea;color:#305F32;font:500 12px/1 'Pretendard Variable',sans-serif;padding:6px 11px;text-decoration:none;white-space:nowrap" style-hover="background:#305F32;color:#fff">공식 안내 →</a></span></div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px 24px;padding:15px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 52px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif;color:#275c4a">2025</span><span style="flex:1 1 280px;font:400 14px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">네이버 어학사전 '중국어 학습사전' — 기획·세팅 후 인수인계</span></div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px 24px;padding:15px 0;border-top:1px solid #eae7e0;border-bottom:1px solid #eae7e0"><span style="flex:0 0 52px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif;color:#275c4a">2026</span><span style="flex:1 1 280px;font:400 14px/1.7 'Pretendard Variable',sans-serif;color:#3a3833">네이버 지식백과 '중국 도시백과사전' — 327개 도시 세팅(진행 중)</span></div>
+            </div>
+            <p style="font:500 18px/1.75 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin:0;padding:22px 24px;border-radius:14px;background:#f5f3ee">한 사람이 다 제작할 수 없는 규모의 프로젝트를&nbsp;<span style="letter-spacing: -0.36px;">오케스트레이터가 되어&nbsp;</span>0에서부터 100까지 세팅했습니다. 이를 5년 간 매년 다른 조건에서 다시 만들었습니다.</p>
+          </sc-if>
+
+          <sc-if value="{{ isC6 }}" hint-placeholder-val="{{ false }}">
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0 0 32px">콘텐츠를 보려고 앱을 따로 켜는 사람은 거의 없습니다. 신생 콘텐츠 앱이 넘어야 할 벽은 정보의 질이 아니라 첫 문장이었습니다. 기사와 사진 DB를 발제 단계부터 탐색해 카드뉴스를 기획하고 제목과 본문 텍스트를 직접 구성했습니다.</p>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px">
+              <span style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e">직접 기획·작성한 카드뉴스 커버</span>
+              <a href="https://app.notion.com/p/3c3cb74c1519811f8a97f83634ee2a73" target="_blank" rel="noopener" style="border-radius:999px;background:#e7e4dc;color:#1b1a17;font:500 12px/1 'Pretendard Variable',sans-serif;padding:10px 15px;white-space:nowrap" style-hover="background:#1b1a17;color:#fdfdfc">콘텐츠 전체 보기 →</a>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-bottom:34px">
+              <sc-for list="{{ ohItems }}" as="oh" hint-placeholder-count="9">
+                <a href="{{ oh.url }}" target="_blank" rel="noopener" style="display:flex;flex-direction:column;gap:12px;color:inherit">
+                  <div role="img" aria-label="{{ oh.title }}" style="width:100%;aspect-ratio:9/16;border-radius:12px;background-color:#1b1a17;background-image:url({{ oh.img }});background-size:cover;background-position:center top"></div>
+                  <div style="font:600 13.5px/1.5 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17">{{ oh.title }}</div>
+                  <div style="display:flex;flex-direction:column;gap:5px">
+                    <sc-for list="{{ oh.stats }}" as="st" hint-placeholder-count="2">
+                      <div style="display:flex;gap:10px;justify-content:space-between"><span style="font:400 11.5px/1.5 'Pretendard Variable',sans-serif;color:#a8a49a">{{ st.k }}</span><span style="font:500 11.5px/1.5 'Pretendard Variable',sans-serif;color:#4c4a44;text-align:right">{{ st.v }}</span></div>
+                    </sc-for>
+                  </div>
+                </a>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px">
+              <span style="font:500 12.5px/1 'Pretendard Variable',sans-serif;color:#8a877e">실제 서비스 페이지에 노출된 카드뉴스</span>
+              <span style="font:400 12px/1 'Pretendard Variable',sans-serif;color:#a8a49a">14건 합계 약 406만 읽음</span>
+            </div>
+            <p style="font:400 13.5px/1.8 'Pretendard Variable',sans-serif;color:#6b6960;margin:0 0 18px">카드뉴스 발행 이후 서비스 페이지에 실제로 노출된 화면입니다. 제목은 모두 직접 작성했습니다.</p>
+            <div style="position:relative;overflow:hidden;max-height:{{ svcMax }};transition:max-height .5s ease">
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px">
+              <div role="img" aria-label="사라졌던 소년들이 28일 만에 돌아왔다 — 587,261읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-01.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="구한말 최고 기생, 그녀는 '향기나는 꽃'이었다 — 496,239읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-02.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="'끼 있고 암팡지고, 청순한 듯 요염한 그녀' — 480,799읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-03.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="&quot;차범근이 그렇게 대단했나요?&quot; — 434,914읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-04.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="단 3명의 배우에게만 주어진 그것 — 353,594읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-05.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="남편을 '왕'으로 만든 아내의 이 한마디 — 290,711읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-06.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="&quot;그를 죽도록 사랑했기 때문이다&quot; — 256,300읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-07.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="117일간의 표류, 우리를 살린 건 한국어선이었다 — 210,315읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-08.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="그 시절, 우리가 사랑했던 소녀들 — 204,389읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-09.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="아인슈타인 보다 뛰어난 한국인 천재 물리학자 — 196,637읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-10.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="&quot;국가 위해 청춘 바쳤는데.. 이래도 되나요?&quot; — 183,802읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-11.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="대한민국 1호 주민등록증의 주인공은? — 139,552읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-12.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="사진 속 그남자, 나는 그의 신부가 되기로 했다 — 120,565읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-13.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+              <div role="img" aria-label="나는 그날, 악마를 보았다 — 103,691읽음" style="border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eae7e0;background-image:url(assets/svc-14.png);background-size:cover;background-position:center top;aspect-ratio:265/380"></div>
+            </div>
+              <div style="position:absolute;left:0;right:0;bottom:0;height:96px;background:linear-gradient(180deg,rgba(253,253,252,0),#fdfdfc);pointer-events:none;opacity:{{ svcFade }};transition:opacity .3s ease"></div>
+            </div>
+            <div style="display:flex;justify-content:center;margin:14px 0 38px">
+              <button type="button" onClick="{{ toggleSvc }}" aria-label="카드뉴스 더 보기" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid #d9d5cc;border-radius:999px;background:#fff;color:#6b6960;cursor:pointer;padding:0" style-hover="background:#f5f3ee;color:#1b1a17">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate({{ svcArrow }});transition:transform .3s ease"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+
+            <div style="border-radius:16px;background:#f5f3ee;padding:26px 28px 28px;margin-bottom:26px">
+              <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:18px">
+                <span style="font:600 16px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17">포털 메인 노출과 반응</span>
+                <span style="font:400 12px/1.5 'Pretendard Variable',sans-serif;color:#8a877e">2016년 당시 직접 캡처한 화면 기록</span>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px">
+                <div style="grid-column:1/-1;display:flex;flex-direction:column;border:1px solid #e3e0d8;border-radius:12px;background:#fff;overflow:hidden">
+                  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;padding:12px;border-bottom:1px solid #eae7e0">
+                    <div role="img" aria-label="네이버 모바일 메인 현충일 카드뉴스 노출 화면" style="position:relative;width:100%;aspect-ratio:1080/660;background-image:url(assets/pm-main-memorial.png);background-size:100% auto;background-position:center top;background-repeat:no-repeat;border:1px solid #e3e0d8;border-radius:8px">
+                      <span style="position:absolute;left:5.1%;top:78.5%;width:41.7%;height:7%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .3s infinite"></span>
+                      <span style="position:absolute;left:5.1%;top:86.7%;width:36%;height:7%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .8s infinite"></span>
+                    </div>
+                    <div role="img" aria-label="네이버 정치 많이 본 뉴스 2위 화면" style="position:relative;width:100%;aspect-ratio:1080/520;background-image:url(assets/pm-rank2.png);background-size:100% auto;background-position:center top;background-repeat:no-repeat;border:1px solid #e3e0d8;border-radius:8px">
+                      <span style="position:absolute;left:9.7%;top:53.5%;width:69.4%;height:10.6%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .5s infinite"></span>
+                    </div>
+                  </div>
+                  <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 32px;padding:20px 22px 22px">
+                    <div style="flex:1 1 300px;min-width:0">
+                      <div style="font:600 17px/1.55 'Pretendard Variable',sans-serif;letter-spacing:-.025em;color:#1b1a17;word-break:keep-all;margin-bottom:10px">[카드뉴스] '단 한 명의 전우도 전장에 남겨두지 않는다'</div>
+                      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px"><span style="font:500 12.5px/1.5 'Pretendard Variable',sans-serif;color:#6b6960">네이버 모바일 메인 현충일 카드 노출</span><span style="display:inline-flex;align-items:center;border-radius:999px;background:#eaf1ea;color:#305F32;font:500 12px/1.4 'Pretendard Variable',sans-serif;padding:7px 12px;white-space:nowrap">정치 많이 본 뉴스 2위</span><span style="font:400 11px/1.5 'Pretendard Variable',sans-serif;color:#a8a49a;white-space:nowrap">2016.06.06</span></div>
+                    </div>
+                    <div style="flex:0 0 auto;text-align:right">
+                      <div style="font:600 44px/1 'Pretendard Variable',sans-serif;letter-spacing:-.04em;color:#1b1a17;white-space:nowrap">257,750</div>
+                      <div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:8px">조회 · 같은 날 정치 랭킹 2위</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;border:1px solid #e3e0d8;border-radius:12px;background:#fff;overflow:hidden">
+                  <div role="img" aria-label="네이버 모바일 메인 불국사 카드뉴스 노출 화면" style="position:relative;width:100%;aspect-ratio:1440/1173;background-image:url(assets/pm-main-bulguk.png);background-size:100% auto;background-position:center top;background-repeat:no-repeat;border-bottom:1px solid #eae7e0">
+                    <span style="position:absolute;left:4.9%;top:84.1%;width:40.6%;height:4.4%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .3s infinite"></span>
+                    <span style="position:absolute;left:4.9%;top:89.3%;width:24.3%;height:4.4%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .8s infinite"></span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;flex:1 1 auto;padding:16px 18px 18px">
+                    <div style="font:600 14.5px/1.6 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;word-break:keep-all;margin-bottom:12px">[카드뉴스] "아이고!" 불국사에 울려퍼진 스님의 비명</div>
+                    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:14px"><span style="font:500 12px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;white-space:nowrap">네이버 모바일 메인</span><span style="font:400 11px/1.5 'Pretendard Variable',sans-serif;color:#a8a49a;white-space:nowrap">2016.07.02</span></div>
+                    <div style="margin-top:auto;padding-top:14px;border-top:1px solid #eae7e0">
+                      <span style="display:inline-flex;align-items:center;border-radius:999px;background:#eaf1ea;color:#305F32;font:500 12px/1.4 'Pretendard Variable',sans-serif;padding:7px 12px;white-space:nowrap">메인뉴스 노출</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;border:1px solid #e3e0d8;border-radius:12px;background:#fff;overflow:hidden">
+                  <div role="img" aria-label="울산 가재소년 · 불국사 카드뉴스 동시 유입" style="width:100%;aspect-ratio:1080/880;background-image:url(assets/pm-analytics.png);background-size:100% auto;background-position:center top;background-repeat:no-repeat;border-bottom:1px solid #eae7e0"></div>
+                  <div style="display:flex;flex-direction:column;flex:1 1 auto;padding:16px 18px 18px">
+                    <div style="font:600 14.5px/1.6 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;word-break:keep-all;margin-bottom:12px">메인 노출 직후, 자사 앱 실시간 동시 접속</div>
+                    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:14px"><span style="font:500 12px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;white-space:nowrap">구글 애널리틱스 · 자사 앱 실시간</span><span style="font:400 11px/1.5 'Pretendard Variable',sans-serif;color:#a8a49a;white-space:nowrap">2016.07.02</span></div>
+                    <div style="margin-top:auto;padding-top:14px;border-top:1px solid #eae7e0">
+                      <div style="font:600 26px/1.05 'Pretendard Variable',sans-serif;letter-spacing:-.035em;color:#1b1a17">5,082명</div>
+                      <div style="font:400 12px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">앱 동시 접속 · 이 중 네이버 유입 4,909명 (모바일 97%)</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;border:1px solid #e3e0d8;border-radius:12px;background:#fff;overflow:hidden">
+                  <div role="img" aria-label="네이버 많이 본 뉴스 노출 화면" style="position:relative;width:100%;aspect-ratio:1078/710;background-image:url(assets/pf-2.png);background-size:100% auto;background-position:center top;background-repeat:no-repeat;border-bottom:1px solid #eae7e0">
+                    <span style="position:absolute;left:4%;top:21.5%;width:69%;height:8.2%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .3s infinite"></span>
+                    <span style="position:absolute;left:4%;top:64%;width:80%;height:8.2%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .9s infinite"></span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;flex:1 1 auto;padding:16px 18px 18px">
+                    <div style="font:600 14.5px/1.6 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;word-break:keep-all;margin-bottom:12px">[카드뉴스] 안두희는 왜 백범을 암살했나 · 8년 만에 돌아왔소, 늦어서 미안하오!</div>
+                    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:14px"><span style="font:500 12px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;white-space:nowrap">네이버 많이 본 뉴스</span><span style="font:400 11px/1.5 'Pretendard Variable',sans-serif;color:#a8a49a;white-space:nowrap">2016.06</span></div>
+                    <p style="margin:0 0 14px;font:400 12.5px/1.75 'Pretendard Variable',sans-serif;color:#8a877e;word-break:keep-all">같은 시각 정치·생활 두 카테고리 상위가 모두 직접 제작한 카드뉴스였다.</p>
+                    <div style="margin-top:auto;padding-top:14px;border-top:1px solid #eae7e0">
+                      <span style="display:inline-flex;align-items:center;border-radius:999px;background:#eaf1ea;color:#305F32;font:500 12px/1.4 'Pretendard Variable',sans-serif;padding:7px 12px;white-space:nowrap">정치·생활 1위 동시 석권</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;border:1px solid #e3e0d8;border-radius:12px;background:#fff;overflow:hidden">
+                  <div role="img" aria-label="[카드뉴스] 사라졌던 소년들이 28일 만에 돌아왔다" style="position:relative;width:100%;aspect-ratio:540/610;background-image:url(assets/pm-rank.png);background-size:100% auto;background-position:center top;background-repeat:no-repeat;border-bottom:1px solid #eae7e0">
+                    <span style="position:absolute;left:8%;top:24.3%;width:69%;height:5.6%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .3s infinite"></span>
+                    <span style="position:absolute;left:8%;top:30.5%;width:16%;height:5.6%;background:rgba(255,226,92,.55);mix-blend-mode:multiply;border-radius:4px;transform-origin:left center;animation:hlSweep 6s ease-in-out .75s infinite"></span>
+                  </div>
+                  <div style="display:flex;flex-direction:column;flex:1 1 auto;padding:16px 18px 18px">
+                    <div style="font:600 14.5px/1.6 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;word-break:keep-all;margin-bottom:12px">[카드뉴스] 사라졌던 소년들이 28일 만에 돌아왔다</div>
+                    <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:14px"><span style="font:500 12px/1.5 'Pretendard Variable',sans-serif;color:#6b6960;white-space:nowrap">네이버 뉴스 · 랭킹뉴스 시사</span><span style="font:400 11px/1.5 'Pretendard Variable',sans-serif;color:#a8a49a;white-space:nowrap">2016.07</span></div>
+                    <div style="margin-top:auto;padding-top:14px;border-top:1px solid #eae7e0">
+                      <div style="font:600 26px/1.05 'Pretendard Variable',sans-serif;letter-spacing:-.035em;color:#1b1a17">454,932</div>
+                      <div style="font:400 12px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">랭킹뉴스 시사 1위</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:28px 44px;margin-bottom:26px">
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">51.7만뷰</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">단일 콘텐츠 최고 조회수(다음)</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">2시간·25만뷰</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">네이버 메인 최단 도달</div></div>
+              <div><div style="font:600 28px/1.1 'Pretendard Variable',sans-serif;letter-spacing:-.035em">6,777명</div><div style="font:400 12.5px/1.5 'Pretendard Variable',sans-serif;color:#8a877e;margin-top:7px">앱 최대 동시접속</div></div>
+            </div>
+            <p style="font:400 15.5px/1.9 'Pretendard Variable',sans-serif;color:#3a3833;margin:0">댓글 7,301건 · 공감 6,270건으로 단일 콘텐츠 최다 반응을 기록했습니다.</p>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isLibrary }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:26px 40px 56px">
+      <h2 style="font:600 {{ secSize }}/1.3 'Pretendard Variable',sans-serif;letter-spacing:-.03em;margin:0 0 14px">카피 라이브러리</h2>
+      <p style="font: 400 15px/1.8 'Pretendard Variable',sans-serif; color: #6b6960; margin: 0 0 26px">중여커 메인 배너와 CTA에 실제로 발행된 카피입니다. 각 문장을 그렇게 쓴 판단 근거를 함께 적었습니다.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:30px">
+        <button type="button" onClick="{{ filterAll }}" style="border:0;border-radius:999px;background:{{ fAllBg }};color:{{ fAllFg }};font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:11px 16px;cursor:pointer">전체</button>
+        <button type="button" onClick="{{ filterIntro }}" style="border:0;border-radius:999px;background:{{ fIntroBg }};color:{{ fIntroFg }};font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:11px 16px;cursor:pointer">서비스 소개</button>
+        <button type="button" onClick="{{ filterEntry }}" style="border:0;border-radius:999px;background:{{ fEntryBg }};color:{{ fEntryFg }};font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:11px 16px;cursor:pointer">진입 유도</button>
+        <button type="button" onClick="{{ filterCommerce }}" style="border:0;border-radius:999px;background:{{ fCommerceBg }};color:{{ fCommerceFg }};font:500 12.5px/1 'Pretendard Variable',sans-serif;padding:11px 16px;cursor:pointer">커머스 전환</button>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <sc-for list="{{ libItems }}" as="it" hint-placeholder-count="5">
+          <div style="border-radius:14px;background:#f5f3ee;padding:24px">
+            <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start">
+              <div style="flex:1 1 300px;min-width:0">
+                <div style="font:500 12px/1 'Pretendard Variable',sans-serif;color:#a8a49a;margin-bottom:10px">{{ it.group }}</div>
+                <p style="font:600 18px/1.65 'Pretendard Variable',sans-serif;letter-spacing:-.02em;color:#1b1a17;margin:0">{{ it.copy }}</p>
+              </div>
+              <button type="button" onClick="{{ it.toggle }}" style="flex:0 0 auto;border:0;border-radius:999px;background:#e7e4dc;color:#1b1a17;font:500 12px/1 'Pretendard Variable',sans-serif;padding:10px 15px;cursor:pointer;white-space:nowrap" style-hover="background:#1b1a17;color:#fdfdfc">{{ it.cta }}</button>
+            </div>
+            <sc-if value="{{ it.open }}" hint-placeholder-val="{{ false }}">
+              <p style="font:400 13.5px/1.9 'Pretendard Variable',sans-serif;color:#4c4a44;margin:16px 0 0;padding-top:16px;border-top:1px solid #e3e0d8">{{ it.why }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="margin-top:44px">
+        <div style="font:600 18px/1.4 'Pretendard Variable',sans-serif;letter-spacing:-.025em;margin-bottom:10px">카테고리 네이밍 — 명사가 아니라 동사로</div>
+        <p style="font: 400 14.5px/1.85 'Pretendard Variable',sans-serif; color: #6b6960; margin: 0 0 22px">쇼핑 하기 · 택시 타기 · 배달 주문 · 알리페이 등록 — 여행자의 머릿속에 있는 건 분류가 아니라 해야 할 일입니다.</p>
+        <div style="display:flex;flex-direction:column">
+          <div style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 84px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif">결제</span><span style="flex:1 1 240px;font:400 13.5px/1.6 'Pretendard Variable',sans-serif;color:#6b6960">위챗페이/알리페이 · 신용카드/현금</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 84px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif">통신</span><span style="flex:1 1 240px;font:400 13.5px/1.6 'Pretendard Variable',sans-serif;color:#6b6960">데이터로밍/유심/이심 · 와이파이도시락/VPN</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 84px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif">필수앱</span><span style="flex:1 1 240px;font:400 13.5px/1.6 'Pretendard Variable',sans-serif;color:#6b6960">고덕지도/바이두지도 · 파파고/메이퇀</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-top:1px solid #eae7e0"><span style="flex:0 0 84px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif">교통</span><span style="flex:1 1 240px;font:400 13.5px/1.6 'Pretendard Variable',sans-serif;color:#6b6960">고속철도 · 택시/지하철/버스</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px 24px;padding:14px 0;border-top:1px solid #eae7e0;border-bottom:1px solid #eae7e0"><span style="flex:0 0 84px;font:500 13.5px/1.6 'Pretendard Variable',sans-serif">유의사항</span><span style="flex:1 1 240px;font:400 13.5px/1.6 'Pretendard Variable',sans-serif;color:#6b6960">계좌송금 요구 · 짐 검사/출입국/세관</span></div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding:22px 40px;background:#f5f3ee;font:400 12px/1.6 'Pretendard Variable',sans-serif;color:#8a877e">
+      <span>© 임서영. All rights reserved.</span>
+      <span>Brand Copywriter &amp; Content Director</span>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startScreen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;cases&quot;,&quot;library&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;'home'|'cases'|'library'&quot;,&quot;section&quot;:&quot;Prototype&quot;},&quot;device&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;desktop&quot;,&quot;mobile&quot;],&quot;default&quot;:&quot;desktop&quot;,&quot;tsType&quot;:&quot;'desktop'|'mobile'&quot;,&quot;section&quot;:&quot;Prototype&quot;},&quot;revealAB&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Prototype&quot;},&quot;showReasons&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Prototype&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const h = location.hostname;
+    if (h.endsWith('.vercel.app')) {
+      const s = document.createElement('script');
+      s.defer = true; s.src = '/_vercel/insights/script.js';
+      document.head.appendChild(s);
+    }
+  }
+
+  state = { screen: null, device: null, caseId: 'c2', redlines: {}, libOpen: {}, filter: 'all', svcOpen: false };
+
+  get screen() { return this.state.screen ?? this.props.startScreen ?? 'home'; }
+  get device() { return this.state.device ?? this.props.device ?? 'desktop'; }
+
+  toTop() {
+    const roots = [window, document.scrollingElement, document.documentElement, document.body];
+    try { window.scrollTo(0, 0); } catch (e) {}
+    for (const r of roots) { if (r && 'scrollTop' in r) r.scrollTop = 0; }
+    let el = this.host || null;
+    if (!el && typeof document !== 'undefined') el = document.querySelector('x-dc');
+    while (el) {
+      if (el.scrollHeight > el.clientHeight + 1) el.scrollTop = 0;
+      el = el.parentElement;
+    }
+    try { window.parent && window.parent.postMessage({ type: 'scrollToTop' }, '*'); } catch (e) {}
+  }
+
+  go(screen) { return () => { this.setState({ screen }); requestAnimationFrame(() => this.toTop()); }; }
+  openCase(id) { return () => { this.setState({ screen: 'cases', caseId: id }); requestAnimationFrame(() => this.toTop()); }; }
+  toggleRedline(i) { return () => this.setState(s => ({ redlines: { ...s.redlines, [i]: !s.redlines[i] } })); }
+  toggleLib(k) { return () => this.setState(s => ({ libOpen: { ...s.libOpen, [k]: !s.libOpen[k] } })); }
+
+  caseMeta() {
+    return {
+      c1: ['제목 하나로 조회수 3배', '제목 작성 및 판 편성, 판 분석 리포트 작성 — 기여도 100% · 네이버 메인 중국 주제판 (약 3년)'],
+      c2: ['이름을 짓고, 7만 명을 모으고, 매출을 만들기까지', "제안·네이밍·런칭·운영 총괄 (2024.11~) · 중국여행자커뮤니티 '중여커'\n해당 기획으로 '더중앙어워즈' 우수사원상을 수상했습니다."],
+      c3: ['불편함을 해소한 직관적인 서비스', '서비스 기획, 분류 체계 및 표기 기준 수립 총괄 — 기여도 100% (개발 협업) · 중여커 지도'],
+      c4: ['기사 쓰기를 넘어, 클릭하게 만들기', '기사 작성, 시리즈 네이밍 직접 개발 — 기여도 100%'],
+      c5: ['5년 연속, 네이버 콘텐츠 프로젝트 완수', '2022 실무자 · 2023~ 팀장 총괄 — 제안·플로우 설계·검수 100% · 네이버 지식백과·어학사전'],
+      c6: ['한 문장으로 51만 명을 멈춰 세우다', "발제·제목·본문 직접 작성 — 기여도 90%(디자인 협업) · 중앙일보 'Our History'"]
+    }[this.state.caseId];
+  }
+
+  redlineData() {
+    const raw = [
+      ['① 애플 팀 쿡', 'PV 9,000 → 약 30,000 (3배)', '애플CEO 팀 쿡, 그가 중국에 백기를 든 이유는?', '中 스타벅스서 커피값 못 내 망신 당한 애플 CEO', "'백기'라는 추상적 은유를 걷어내고 커피값을 못 낸 구체적 장면으로 전환."],
+      ['② 아마존 vs 틱톡', '', '美 출판업계서 더 환영 받는 건 아마존 아닌 틱톡?', "미국에선 '틱톡'이 아마존보다 책을 더 잘 판다?", "업계 시점의 서술을 독자가 아는 두 브랜드의 대결로, '환영받는다'는 모호한 술어를 '더 잘 판다'는 검증 가능한 동사로 변경."],
+      ['③ 하이디라오 신임 CEO', '', '27년 전 평사원에서 시작해 하이디라오 CEO된 여성', '월급 120위안 받던 홀서빙 직원, 하이디라오 CEO 됐다', "'평사원'이라는 요약을 '월급 120위안, 홀서빙'이라는 구체값으로 전환하여 낙차 극대화."]
+    ];
+    const revealAll = this.props.revealAB === true;
+    return raw.map((r, i) => {
+      const open = revealAll || !!this.state.redlines[i];
+      return {
+        label: r[0], pv: r[1], before: r[2], after: r[3], note: r[4],
+        arBefore: ['662/349', '818/245', '836/251'][i],
+        arAfter: ['664/400', '818/245', '812/244'][i],
+        imgBefore: i === 0 ? 'assets/redline-1-before.png' : 'assets/rl-' + (i + 1) + '-before.png',
+        imgAfter: i === 0 ? 'assets/redline-1-after.png' : 'assets/rl-' + (i + 1) + '-after.png',
+        open, closed: !open, toggle: this.toggleRedline(i)
+      };
+    });
+  }
+
+  libData() {
+    const raw = [
+      ['서비스 소개', 'intro', '[단독] 중여커 중국여행 맛집 지도 / 한국어로 보는 중국 맛집·호텔 리스트 · 상시 업데이트 중', "뉴스의 '[단독]'을 커뮤니티로 가져와 희소성을 신호했습니다. 차별점은 기능이 아니라 '한국어로 보는' 다섯 글자에 담았고, '상시 업데이트 중'으로 정보 서비스의 최대 불안(낡은 정보)을 먼저 해소했습니다."],
+      ['서비스 소개', 'intro', '중국 도시별 간편 가이드북', "'가이드북'은 무겁고 '간편'은 가볍습니다. 두 단어를 붙여 읽을 각오 없이 열어도 되는 것으로 만들었습니다."],
+      ['진입 유도', 'entry', '어떻게 가야 할지 막막하다고요? / 디즈니랜드 찐 후기 모음집', "브랜드가 아니라 고객의 감정을 먼저 말합니다. '막막하다'는 표현이 자기 상태와 맞는 사람만 클릭하고, 그래서 클릭한 사람은 반드시 읽습니다."],
+      ['진입 유도', 'entry', '이것만 알면 여행 끝!', '정보량을 늘리는 대신 학습 부담이 적다는 약속을 앞세웠습니다. 초행자가 가장 두려워하는 건 정보 부족이 아니라 공부할 게 많다는 예감입니다.'],
+      ['진입 유도', 'entry', '커피 주문은?', '명사 나열 대신 질문 하나. 여행지에서 실제로 마주치는 순간을 그대로 던져 상황과 콘텐츠를 연결했습니다.'],
+      ['커머스 전환', 'commerce', '트립닷컴 투어&티켓 중여커 회원 전용코드', "할인율이 아니라 '회원 전용'을 앞에 세웠습니다. 혜택의 크기보다 자격이 있다는 감각이 커뮤니티에서는 더 강하게 작동합니다."],
+      ['커머스 전환', 'commerce', '매주 화·목 오전 11시 항공·호텔 최대 5만원 쿠폰', "'수시로'가 아니라 요일과 시각을 못 박았습니다. 반복되는 약속은 습관을 만들고, 습관은 재방문이 됩니다."],
+      ['커머스 전환', 'commerce', '상하이 디즈니랜드 입장권 예매 바로가기', '정보 소비에서 구매 행동으로 넘어가는 문턱에 놓인 문구. 망설임이 생기지 않도록 다음 동작 하나만 남겼습니다.']
+    ];
+    const alwaysOpen = this.props.showReasons === true;
+    return raw
+      .filter(r => this.state.filter === 'all' || this.state.filter === r[1])
+      .map(r => {
+        const key = r[2];
+        const open = alwaysOpen || !!this.state.libOpen[key];
+        return { group: r[0], copy: r[2], why: r[3], open, cta: open ? '접기' : '왜 이렇게 썼나', toggle: this.toggleLib(key) };
+      });
+  }
+
+  mapVideo = el => {
+    if (!el) return;
+    el.muted = true;
+    el.play().catch(() => {});
+  };
+
+  renderVals() {
+    const m = this.caseMeta();
+    const s = this.screen;
+    const mob = this.device === 'mobile';
+    const ink = '#1b1a17', paper = '#fdfdfc';
+    const tabBg = k => s === k ? ink : 'transparent';
+    const tabFg = k => s === k ? paper : '#6b6960';
+    const navFg = k => s === k ? '#275c4a' : '#1b1a17';
+    const cBg = id => this.state.caseId === id ? '#f0eee7' : 'transparent';
+    const cFg = id => this.state.caseId === id ? '#275c4a' : '#1b1a17';
+    const fBg = k => this.state.filter === k ? ink : '#f1efe9';
+    const fFg = k => this.state.filter === k ? paper : '#4c4a44';
+    return {
+      frameW: mob ? '390px' : '1080px',
+      heroSize: mob ? '30px' : '50px',
+      secSize: mob ? '23px' : '32px',
+      ctaSize: mob ? '26px' : '38px',
+      arcSize: mob ? '19px' : '23px',
+      caseTitleSize: mob ? '22px' : '30px',
+      isHome: s === 'home', isCases: s === 'cases', isLibrary: s === 'library',
+      goHome: this.go('home'), goCases: this.go('cases'), goLibrary: this.go('library'),
+      tabHomeBg: tabBg('home'), tabHomeFg: tabFg('home'),
+      tabCasesBg: tabBg('cases'), tabCasesFg: tabFg('cases'),
+      tabLibBg: tabBg('library'), tabLibFg: tabFg('library'),
+      navHome: navFg('home'), navCases: navFg('cases'), navLib: navFg('library'),
+      setDesktop: () => this.setState({ device: 'desktop' }),
+      setMobile: () => this.setState({ device: 'mobile' }),
+      dtBg: mob ? 'transparent' : ink, dtFg: mob ? '#6b6960' : paper,
+      mbBg: mob ? ink : 'transparent', mbFg: mob ? paper : '#6b6960',
+      openC1: this.openCase('c1'), openC2: this.openCase('c2'), openC3: this.openCase('c3'),
+      openC4: this.openCase('c4'), openC5: this.openCase('c5'), openC6: this.openCase('c6'),
+      c1Bg: cBg('c1'), c2Bg: cBg('c2'), c3Bg: cBg('c3'), c4Bg: cBg('c4'), c5Bg: cBg('c5'), c6Bg: cBg('c6'),
+      c1Fg: cFg('c1'), c2Fg: cFg('c2'), c3Fg: cFg('c3'), c4Fg: cFg('c4'), c5Fg: cFg('c5'), c6Fg: cFg('c6'),
+      caseTitle: m[0], caseRole: m[1],
+      isC1: this.state.caseId === 'c1', isC2: this.state.caseId === 'c2', isC3: this.state.caseId === 'c3',
+      isC4: this.state.caseId === 'c4', isC5: this.state.caseId === 'c5', isC6: this.state.caseId === 'c6',
+      ucItems: [
+        { img: 'assets/uc1.png', url: 'https://www.joongang.co.kr/article/25134588', title: '반도체 대란에도 끄떡 없다 中 전기차 제왕 비야디 무기' },
+        { img: 'assets/uc2.png', url: 'https://www.joongang.co.kr/article/25140780', title: '루이싱커피, 망한 줄 알았지 나스닥 퇴출 뒤 일어난 반전' },
+        { img: 'assets/uc3.png', url: 'https://www.joongang.co.kr/article/25147334', title: '샤오미 해고 먼저 알았다 중국판 블라인드의 진짜 힘' },
+        { img: 'assets/uc4.png', url: 'https://www.joongang.co.kr/article/25154475', title: "전세계 6만곳 '찐후기' 담겼다 중국MZ 꼭 챙기는 여행앱" },
+        { img: 'assets/uc5.png', url: 'https://www.joongang.co.kr/article/25159771', title: "쫀드기 하나로 홍콩증시 상장 '570원짜리 간식'의 영업비밀" },
+        { img: 'assets/uc6.png', url: 'https://www.joongang.co.kr/article/25168155', title: '"맛없으면 환불" 진짜였다 홍콩 증시 상장한 과일가게' }
+      ],
+      odyItems: [
+        { img: 'assets/odyssey-tile1.png', title: '중국 국보 1호급 그림서 찾은 900년 전 고려인', pv: '92,519', likes: '61' },
+        { img: 'assets/odyssey-tile2.png', title: '새우 한 마리에 3억? 붓이 스친 자리엔 생명이 펄떡거린다', pv: '57,346', likes: '54' },
+        { img: 'assets/odyssey-tile3.png', title: "'친절한 정숙씨', 성악으로 펑리위안과 친구되나?", pv: '73,345', likes: '70' },
+        { img: 'assets/odyssey-tile4.png', title: '그 시절, 중국의 최고 스타는 한국인이었다', pv: '68,484', likes: '256' },
+        { img: 'assets/odyssey-tile5.png', title: "일장기 달고 중국 탁구 격파한 '중국인'", pv: '57,030', likes: '94' },
+        { img: 'assets/odyssey-tile6.png', title: '30년대 대만 여성들의 우상이었던 최승희', pv: '77,471', likes: '106' },
+      ],
+      ohItems: [
+        { img: 'assets/oh-cover1.jpg', url: 'https://www.joongang.co.kr/article/20906128', title: '[울산 가재소년] 사라졌던 소년들이 28일 만에 돌아왔다', stats: [{ k: '채널', v: '다음뉴스 메인 · 네이버뉴스 메인' }, { k: '조회', v: '51.7만뷰 / 45.4만뷰' }, { k: '반응', v: '공감 6,270+ · 댓글 7,301+ · 앱 동시접속 6,777명' }] },
+        { img: 'assets/oh-cover2.jpg', url: 'https://www.joongang.co.kr/article/20251990', title: '[카드뉴스] "아이고!" 불국사에 울려퍼진 스님의 비명', stats: [{ k: '채널', v: '네이버 메인' }, { k: '조회', v: '2시간 만에 25만뷰' }, { k: '반응', v: '댓글 903+ · 공감 545 · 공유 82회' }] },
+        { img: 'assets/oh-cover3.jpg', url: 'https://www.joongang.co.kr/article/20906048', title: '[삼풍백화점] 나는 그날, 악마를 보았다', stats: [{ k: '반응', v: '페이스북 공감 3,353건 · 공유 390회+' }] },
+        { img: 'assets/oh-cover4.jpg', url: 'https://www.joongang.co.kr/article/20905998', title: '그럼에도 "내가 살아남은 이유가 분명히 있었다"', stats: [{ k: '채널', v: '네이버뉴스 메인' }, { k: '반응', v: '댓글 1,170+' }] },
+        { img: 'assets/oh-cover5.jpg', url: 'https://www.joongang.co.kr/article/20242027', title: '[카드뉴스] 불타버린 컨테이너, 그 곳엔 아이들만 있었다', stats: [{ k: '반응', v: '페이스북 공감 372+ · 공유 45회+' }] },
+        { img: 'assets/oh-cover6.jpg', url: 'https://www.joongang.co.kr/article/20131788', title: '[카드뉴스] "단 한 명의 전우도 전장에 남겨두지 않는다"', stats: [{ k: '채널', v: '네이버뉴스 메인' }, { k: '반응', v: '댓글 900+' }] },
+        { img: 'assets/oh-cover7.jpg', url: 'https://www.joongang.co.kr/article/20116081', title: '[카드뉴스] "한 번의 실수도 용납될 수 없다" 병든 문화재 새 생명', stats: [{ k: '채널', v: '네이버뉴스 메인' }, { k: '반응', v: '댓글 94+' }] },
+        { img: 'assets/oh-cover8.jpg', url: 'https://www.joongang.co.kr/article/20906111', title: '[황태손 이구] 그는 죽고나서야 곤룡포를 입을 수 있었다', stats: [{ k: '반응', v: '페이스북 공감 337+ · 공유 40회' }] },
+        { img: 'assets/oh-cover9.jpg', url: 'https://www.joongang.co.kr/article/20906075', title: '[무령왕릉] 무덤을 열던 그날, 우리는 후손들에게 큰 죄를 지었다', stats: [{ k: '반응', v: '페이스북 공감 1,213+ · 공유 187회+' }] }
+      ],
+      mapVideo: this.mapVideo,
+      mapSources: [
+        { label: 'zhongyouke.com', value: '10,210', pct: '100%' },
+        { label: 'jungyeokeo-map.vercel.app', value: '624', pct: '6%' },
+        { label: 'localhost', value: '165', pct: '2%' },
+        { label: 'Direct / Bookmark', value: '1', pct: '1%' }
+      ],
+      mapPages: [
+        { label: '메인 지도', value: '4,978', pct: '100%' },
+        { label: '/category/식당·맛집', value: '304', pct: '6%' },
+        { label: '/category/제휴업체', value: '271', pct: '5%' },
+        { label: '/place/상하이 디즈니 퇴장시 디디 탑승구역', value: '235', pct: '5%' },
+        { label: '/category/테마파크 혼잡도', value: '227', pct: '5%' }
+      ],
+      redlines: this.redlineData(),
+      libItems: this.libData(),
+      svcMax: this.state.svcOpen ? '4000px' : '236px',
+      svcFade: this.state.svcOpen ? '0' : '1',
+      svcArrow: this.state.svcOpen ? '180deg' : '0deg',
+      toggleSvc: () => this.setState(s => ({ svcOpen: !s.svcOpen })),
+      filterAll: () => this.setState({ filter: 'all' }),
+      filterIntro: () => this.setState({ filter: 'intro' }),
+      filterEntry: () => this.setState({ filter: 'entry' }),
+      filterCommerce: () => this.setState({ filter: 'commerce' }),
+      fAllBg: fBg('all'), fAllFg: fFg('all'),
+      fIntroBg: fBg('intro'), fIntroFg: fFg('intro'),
+      fEntryBg: fBg('entry'), fEntryFg: fFg('entry'),
+      fCommerceBg: fBg('commerce'), fCommerceFg: fFg('commerce')
+    };
+  }
+}
+
+</script>
+</body>
+</html>
