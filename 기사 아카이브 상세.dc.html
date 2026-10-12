@@ -4,6 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<link rel="preload" as="image" href="uc1.png">
+<link rel="preload" as="image" href="uc2.png">
+<link rel="preload" as="image" href="uc3.png">
+<link rel="preload" as="image" href="uc4.png">
+<link rel="preload" as="image" href="uc5.png">
+<link rel="preload" as="image" href="uc6.png">
+<script>
+window.addEventListener('error', function(e) {
+  if (e.target && e.target.tagName === 'IMG') {
+    var img = e.target;
+    var count = parseInt(img.dataset.retryCount || '0', 10);
+    if (count < 2) {
+      img.dataset.retryCount = count + 1;
+      var clean = img.src.split('?')[0];
+      setTimeout(function() { img.src = clean + '?v=' + Date.now(); }, 400);
+      return;
+    }
+    var parent = img.parentElement;
+    if (parent) {
+      img.style.display = 'none';
+      if (!parent.querySelector('.img-card-fallback')) {
+        var card = document.createElement('div');
+        card.className = 'img-card-fallback';
+        card.style.cssText = 'width:100%;aspect-ratio:537/682;box-sizing:border-box;padding:26px 20px;background:linear-gradient(145deg,#232b3e 0%,#151926 100%);color:#fff;display:flex;flex-direction:column;justify-content:space-between;border-radius:inherit;text-align:left;';
+        card.innerHTML = '<span style="font-size:11.5px;letter-spacing:0.18em;color:#93c5fd;font-weight:600">대륙의 신기업 열전</span><div style="font-size:15px;font-weight:600;line-height:1.5;color:#f8fafc;word-break:keep-all">' + (img.alt || '기업 아카이브 보기') + '</div><span style="font-size:12px;color:#94a3b8">기사 전문 읽기 →</span>';
+        parent.appendChild(card);
+      }
+    }
+  }
+}, true);
+</script>
 </head>
 <body>
 <x-dc>
