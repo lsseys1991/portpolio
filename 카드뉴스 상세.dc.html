@@ -26,6 +26,29 @@
     75% { transform: translate3d(-2%,-2%,0); }
     100% { transform: translate3d(0,0,0); }
   }
+
+  /* PROCESS: 병렬(가로) 단계 */
+  .pp-steps-wrap { margin-top: clamp(32px,4vw,52px); }
+  .pp-steps { list-style:none; margin:0; padding:0; position:relative;
+    display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:0 clamp(16px,2.2vw,28px); }
+  .pp-steps::before { content:""; position:absolute; left:0; right:0; top:5px; height:1px; background:var(--color-neutral-300); }
+  .pp-step { position:relative; padding-top:34px; display:grid; grid-row:span 4; grid-template-rows:subgrid; row-gap:0; align-content:start; }
+  .pp-step::before { content:""; position:absolute; top:0; left:0; width:11px; height:11px; border-radius:50%;
+    background:var(--color-accent-600); box-shadow:0 0 0 5px #f3f5fe; }
+  .pp-step.pp-collab::before { background:#f3f5fe; box-shadow:inset 0 0 0 1.5px var(--color-accent-600), 0 0 0 5px #f3f5fe; }
+  .pp-step > div:last-child { display:contents; }
+  .pp-step > div:last-child > div:first-child { margin-top:10px; }
+  .pp-step > div:last-child > p { word-break:keep-all; font-size:14px !important; line-height:1.8 !important; }
+  .pp-step > div:last-child > div:last-child { align-self:start; margin-top:18px !important; padding-top:12px; border-top:1px solid var(--color-neutral-300); word-break:keep-all; }
+  @media (max-width: 960px) {
+    .pp-steps { grid-template-columns:repeat(3,minmax(0,1fr)); gap:44px clamp(16px,2.2vw,28px); }
+    .pp-steps::before { display:none; }
+    .pp-step { border-top:1px solid var(--color-neutral-300); padding-top:28px; }
+    .pp-step::before { top:-6px; }
+  }
+  @media (max-width: 600px) {
+    .pp-steps { grid-template-columns:1fr; gap:36px; }
+  }
 </style>
 </helmet>
 
@@ -112,8 +135,11 @@
       </div>
       <div style="flex:1 1 440px;min-width:0;max-width:680px">
         <div data-reveal="1" style="font-size:clamp(20px,2.6vw,28px);font-weight:500;line-height:1.45;letter-spacing:-0.015em;color:var(--color-neutral-900)">발제부터 첫 문장, 매체별 리라이팅까지</div>
-        <ol style="list-style:none;margin:28px 0 0;padding:0">
-          <li data-reveal="1" data-delay="0" style="display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--color-neutral-300)">
+      </div>
+    </div>
+    <div class="pp-steps-wrap">
+        <ol class="pp-steps">
+          <li data-reveal="1" data-delay="0" class="pp-step">
             <div style="font-size:12px;letter-spacing:0.12em;color:var(--color-accent-600);padding-top:4px;font-variant-numeric:tabular-nums">01</div>
             <div>
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="font-size:16px;font-weight:500;color:var(--color-neutral-900)">문제 발견</span><span style="font-size:11px;line-height:1;padding:5px 10px;border-radius:999px;background:var(--color-accent-600);color:#ffffff">직접</span></div>
@@ -121,7 +147,7 @@
               <div style="margin-top:8px;font-size:12.5px;color:var(--color-accent-700)">산출물 · 기획 방향</div>
             </div>
           </li>
-          <li data-reveal="1" data-delay="60" style="display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--color-neutral-300)">
+          <li data-reveal="1" data-delay="60" class="pp-step">
             <div style="font-size:12px;letter-spacing:0.12em;color:var(--color-accent-600);padding-top:4px;font-variant-numeric:tabular-nums">02</div>
             <div>
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="font-size:16px;font-weight:500;color:var(--color-neutral-900)">기획</span><span style="font-size:11px;line-height:1;padding:5px 10px;border-radius:999px;background:var(--color-accent-600);color:#ffffff">직접</span></div>
@@ -129,7 +155,7 @@
               <div style="margin-top:8px;font-size:12.5px;color:var(--color-accent-700)">산출물 · 발제안 · 구성안</div>
             </div>
           </li>
-          <li data-reveal="1" data-delay="120" style="display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--color-neutral-300)">
+          <li data-reveal="1" data-delay="120" class="pp-step pp-collab">
             <div style="font-size:12px;letter-spacing:0.12em;color:var(--color-accent-600);padding-top:4px;font-variant-numeric:tabular-nums">03</div>
             <div>
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="font-size:16px;font-weight:500;color:var(--color-neutral-900)">디자인</span><span style="font-size:11px;line-height:1;padding:5px 10px;border-radius:999px;background:transparent;color:var(--color-accent-700);box-shadow:inset 0 0 0 1px var(--color-accent-600)">협업</span></div>
@@ -137,7 +163,7 @@
               <div style="margin-top:8px;font-size:12.5px;color:var(--color-accent-700)">산출물 · 카드 레이아웃</div>
             </div>
           </li>
-          <li data-reveal="1" data-delay="180" style="display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--color-neutral-300)">
+          <li data-reveal="1" data-delay="180" class="pp-step">
             <div style="font-size:12px;letter-spacing:0.12em;color:var(--color-accent-600);padding-top:4px;font-variant-numeric:tabular-nums">04</div>
             <div>
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="font-size:16px;font-weight:500;color:var(--color-neutral-900)">카피</span><span style="font-size:11px;line-height:1;padding:5px 10px;border-radius:999px;background:var(--color-accent-600);color:#ffffff">직접</span></div>
@@ -145,7 +171,7 @@
               <div style="margin-top:8px;font-size:12.5px;color:var(--color-accent-700)">산출물 · 제목 · 본문</div>
             </div>
           </li>
-          <li data-reveal="1" data-delay="240" style="display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1px solid var(--color-neutral-300);border-bottom:1px solid var(--color-neutral-300)">
+          <li data-reveal="1" data-delay="240" class="pp-step">
             <div style="font-size:12px;letter-spacing:0.12em;color:var(--color-accent-600);padding-top:4px;font-variant-numeric:tabular-nums">05</div>
             <div>
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="font-size:16px;font-weight:500;color:var(--color-neutral-900)">발행·확산</span><span style="font-size:11px;line-height:1;padding:5px 10px;border-radius:999px;background:var(--color-accent-600);color:#ffffff">직접</span></div>
@@ -165,7 +191,6 @@
             <div style="margin-top:12px;font-size:14px;line-height:1.85;color:var(--color-neutral-800)">같은 이야기라도 플랫폼마다 첫 문장을 다시 썼습니다. 매체의 문법에 맞춘 리라이팅이 바이럴을 만들었습니다.</div>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
