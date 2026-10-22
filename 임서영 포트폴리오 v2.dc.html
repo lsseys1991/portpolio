@@ -16,6 +16,8 @@
 <script src="./image-slot.js"></script>
 <style>
   html { scroll-behavior: smooth; }
+  [data-role="root"] { word-break: keep-all; overflow-wrap: anywhere; }
+  @media (max-width: 640px) { [data-navlink] { display: none; } }
   body { margin: 0; background: #f3f5fe; }
   a { color: var(--color-accent-600); text-decoration: none; }
   a:hover { color: var(--color-accent-700); }
@@ -57,9 +59,10 @@
   <nav style="position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;height:58px;padding:0 clamp(18px,4vw,44px);background:rgba(243,245,254,0.80);backdrop-filter:blur(16px);border-bottom:1px solid var(--color-neutral-300)">
     <a href="#top" style="font-size:14px;letter-spacing:0.02em;color:var(--color-neutral-900)">임서영 포트폴리오</a>
     <div style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-size:13px">
-      <a href="#about" style="color:var(--color-neutral-700)">소개</a>
-      <a href="#work" style="color:var(--color-neutral-700)">주요 프로젝트</a>
-      <a href="#can" style="color:var(--color-neutral-700)">할 수 있는 일</a>
+      <a href="#about" data-navlink="1" style="color:var(--color-neutral-700)">성과</a>
+      <a href="#work" data-navlink="1" style="color:var(--color-neutral-700)">주요 프로젝트</a>
+      <a href="#can" data-navlink="1" style="color:var(--color-neutral-700)">할 수 있는 일</a>
+      <a href="#career" data-navlink="1" style="color:var(--color-neutral-700)">경력</a>
       <a href="mailto:lsseys1991@gmail.com" class="btn btn-primary" style="font-size:12px;padding:7px 14px">이메일</a>
     </div>
   </nav>
@@ -67,9 +70,9 @@
   <section id="top" style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;min-height:calc(100vh - 58px);padding-top:clamp(22px,4vh,46px)">
 
     <div style="display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--color-neutral-600)">
-      <span data-scramble="1">Brand Copywriter</span>
+      <span data-scramble="1">Content Editor</span>
       <span style="color:var(--color-accent-600)">×</span>
-      <span data-scramble="1">Content Director</span>
+      <span data-scramble="1">Copywriter</span>
     </div>
 
     <div data-stage="1" style="position:relative;width:100%;flex:1 1 auto;min-height:clamp(430px,62vh,600px);margin-top:clamp(18px,3vh,34px);perspective:1700px;overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none">
@@ -81,69 +84,69 @@
           </div>
           <div style="margin-top:13px">
             <div style="font-size:10px;letter-spacing:0.2em;color:var(--color-accent-600)">01</div>
-            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">이름을 짓고, 7만 5천 명을 모으고, 매출을 만들기까지</div>
+            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">회원 76,255명, 링크로 만든 예약 2,944만 원</div>
             <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">중여커 커뮤니티 · 2024.11 – 현재</div>
-            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">'중여커' 네이밍·상표등록·커뮤니티 빌딩 75,600명</div>
+            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">네이밍 · 커뮤니티 운영 · 제휴 콘텐츠</div>
           </div>
         </div>
 
         <div data-panel="1" style="position:absolute;left:50%;top:50%;width:clamp(180px,min(21vw,30vh),272px);transform:translate(-50%,-50%) translate3d(240px,0,-190px) rotateY(-34deg) scale(0.955);opacity:0.84;z-index:180;filter:brightness(0.84);transform-style:preserve-3d;will-change:transform">
           <div style="position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius-sm);background:var(--color-neutral-200);box-shadow:0 0 0 1px rgba(41,43,49,0.07),0 2px 4px rgba(41,43,49,0.08),0 14px 28px rgba(41,43,49,0.16),0 32px 64px rgba(41,43,49,0.12)">
-            <img src="jyk-map.png" alt="중여커 지도 서비스 화면" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+            <img src="naver-china-panel.png" alt="네이버 모바일 메인 중국 주제판 편성 화면" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
           </div>
           <div style="margin-top:13px">
             <div style="font-size:10px;letter-spacing:0.2em;color:var(--color-accent-600)">02</div>
-            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">중국어 몰라도 쓰는 중국 여행 지도</div>
-            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">중여커 지도 · 2026 런칭</div>
-            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">서비스 기획 · 카테고리 분류 · 표기 기준</div>
+            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">제목 하나로 조회수 3배</div>
+            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">네이버 메인 중국 주제판 · 2017 – 2022</div>
+            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">편성 · 헤드라인 · A/B 테스트 500건+</div>
           </div>
         </div>
 
         <div data-panel="2" style="position:absolute;left:50%;top:50%;width:clamp(180px,min(21vw,30vh),272px);transform:translate(-50%,-50%) translate3d(480px,0,-380px) rotateY(-58deg) scale(0.91);opacity:0.68;z-index:160;filter:brightness(0.68);transform-style:preserve-3d;will-change:transform">
           <div style="position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius-sm);background:var(--color-neutral-200);box-shadow:0 0 0 1px rgba(41,43,49,0.07),0 2px 4px rgba(41,43,49,0.08),0 14px 28px rgba(41,43,49,0.16),0 32px 64px rgba(41,43,49,0.12)">
-            <img src="uc3.png" alt="대륙의 신기업 열전" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transform:scale(1.055);transform-origin:center center">
+            <img src="jyk-map.png" alt="중여커 지도 서비스 화면" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
           </div>
           <div style="margin-top:13px">
             <div style="font-size:10px;letter-spacing:0.2em;color:var(--color-accent-600)">03</div>
-            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">기사를 쓰고, 읽히게 만들기</div>
-            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">차이나랩 · 2017 – 2022</div>
-            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">취재 · 기사 작성 · 유료 구독 콘텐츠</div>
+            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">중국어 몰라도 쓰는 중국 여행 지도</div>
+            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">중여커 지도 · 2026 런칭</div>
+            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">3개월 순방문자 11,000명</div>
           </div>
         </div>
 
         <div data-panel="3" style="position:absolute;left:50%;top:50%;width:clamp(180px,min(21vw,30vh),272px);transform:translate(-50%,-50%) translate3d(720px,0,-690px) rotateY(-58deg) scale(0.865);opacity:0.12;z-index:140;filter:brightness(0.6);transform-style:preserve-3d;will-change:transform">
           <div style="position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius-sm);background:var(--color-neutral-200);box-shadow:0 0 0 1px rgba(41,43,49,0.07),0 2px 4px rgba(41,43,49,0.08),0 14px 28px rgba(41,43,49,0.16),0 32px 64px rgba(41,43,49,0.12)">
-            <img src="naver-dict2.jpg" alt="네이버 중국어사전 — 지역별 악센트 생활 문장" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+            <img src="oh-cover1.jpg" alt="Our History 카드뉴스 커버" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center 72%;display:block">
           </div>
           <div style="margin-top:13px">
             <div style="font-size:10px;letter-spacing:0.2em;color:var(--color-accent-600)">04</div>
-            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">4년 연속, 네이버 콘텐츠 프로젝트 완수</div>
-            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">네이버 콘텐츠 프로젝트 · 연 1만 건 이상</div>
-            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">기획 · 운영 · QA</div>
+            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">첫 문장 하나로 51만 뷰</div>
+            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">카드뉴스 · Our History · 14건 406만 읽음</div>
+            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">기획 · 카피 · 발행</div>
           </div>
         </div>
 
         <div data-panel="4" style="position:absolute;left:50%;top:50%;width:clamp(180px,min(21vw,30vh),272px);transform:translate(-50%,-50%) translate3d(-480px,0,-380px) rotateY(58deg) scale(0.91);opacity:0.68;z-index:160;filter:brightness(0.68);transform-style:preserve-3d;will-change:transform">
           <div style="position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius-sm);background:var(--color-neutral-200);box-shadow:0 0 0 1px rgba(41,43,49,0.07),0 2px 4px rgba(41,43,49,0.08),0 14px 28px rgba(41,43,49,0.16),0 32px 64px rgba(41,43,49,0.12)">
-            <img src="naver-china-panel.png" alt="네이버 모바일 메인 중국 주제판 편성 화면" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+            <img src="naver-dict2.jpg" alt="네이버 중국어사전 — 지역별 악센트 생활 문장" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
           </div>
           <div style="margin-top:13px">
             <div style="font-size:10px;letter-spacing:0.2em;color:var(--color-accent-600)">05</div>
-            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">제목 하나로 조회수 3배</div>
-            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">네이버 메인 중국 주제판 · 2017 – 2022</div>
-            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">편성 · 헤드라인 · 지표 분석</div>
+            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">자동화로 제작 시간 60% 단축, 4년 연속 납품</div>
+            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">네이버 콘텐츠 프로젝트 · 연 1만 건 이상</div>
+            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">대량 제작 공정 설계 · 운영 · 검수</div>
           </div>
         </div>
 
         <div data-panel="5" style="position:absolute;left:50%;top:50%;width:clamp(180px,min(21vw,30vh),272px);transform:translate(-50%,-50%) translate3d(-240px,0,-190px) rotateY(34deg) scale(0.955);opacity:0.84;z-index:180;filter:brightness(0.84);transform-style:preserve-3d;will-change:transform">
           <div style="position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius-sm);background:var(--color-neutral-200);box-shadow:0 0 0 1px rgba(41,43,49,0.07),0 2px 4px rgba(41,43,49,0.08),0 14px 28px rgba(41,43,49,0.16),0 32px 64px rgba(41,43,49,0.12)">
-            <img src="oh-cover1.jpg" alt="Our History 카드뉴스 커버" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center 72%;display:block">
+            <img src="uc3.png" alt="대륙의 신기업 열전" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1.055);transform-origin:center center;display:block">
           </div>
           <div style="margin-top:13px">
             <div style="font-size:10px;letter-spacing:0.2em;color:var(--color-accent-600)">06</div>
-            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">첫 문장 하나로 51만 뷰</div>
-            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">카드뉴스 · Our History · 406만 읽음</div>
-            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">기획 · 카피 · 발행</div>
+            <div style="margin-top:5px;font-size:14px;line-height:1.45;color:var(--color-neutral-800)">유료 구독으로 팔린 기획 시리즈</div>
+            <div style="margin-top:5px;font-size:11px;color:var(--color-neutral-700)">차이나랩 · 2017 – 2022</div>
+            <div style="margin-top:2px;font-size:11px;color:var(--color-neutral-600)">취재 · 기사 작성 · 유료 구독</div>
           </div>
         </div>
 
@@ -165,16 +168,16 @@
       </button>
     </div>
 
-    <div style="max-width:780px;padding:clamp(22px,4vh,40px) 20px clamp(34px,6vh,64px);text-align:center">
+    <div style="max-width:820px;padding:clamp(22px,4vh,40px) 20px clamp(34px,6vh,64px);text-align:center">
       <div data-mask="1" style="overflow:hidden">
-        <div style="font-size:clamp(28px,4.6vw,54px);font-weight:500;line-height:1.24;letter-spacing:-0.015em;color:var(--color-neutral-900)">콘텐츠로</div>
+        <div style="font-size:clamp(26px,4.2vw,50px);font-weight:500;line-height:1.26;letter-spacing:-0.015em;color:var(--color-neutral-900)">제목 하나로 조회수 3배.</div>
       </div>
       <div data-mask="1" style="overflow:hidden">
-        <div style="font-size:clamp(28px,4.6vw,54px);font-weight:500;line-height:1.24;letter-spacing:-0.015em;color:var(--color-neutral-900)">브랜드를 키웁니다</div>
+        <div style="font-size:clamp(26px,4.2vw,50px);font-weight:500;line-height:1.26;letter-spacing:-0.015em;color:var(--color-neutral-900)">콘텐츠 속 링크로 예약 2,944만 원.</div>
       </div>
-      <div data-reveal="1" data-delay="220" style="margin-top:18px;font-size:14px;letter-spacing:0.02em;color:var(--color-neutral-700)">브랜드 카피라이터 · 콘텐츠 디렉터 · 커뮤니케이션 리더</div>
-      <div data-reveal="1" data-delay="300" style="margin-top:6px;font-size:13px;color:var(--color-neutral-600)">중앙일보·네이버 JV 차이나랩 뉴스제작팀장</div>
-      <div data-reveal="1" data-delay="380" style="display:flex;justify-content:center;gap:10px;margin-top:26px">
+      <div data-reveal="1" data-delay="220" style="margin-top:20px;font-size:15px;line-height:1.6;letter-spacing:0.01em;color:var(--color-neutral-800)">콘텐츠 에디터 임서영입니다. 기사, 카드뉴스, 커뮤니티, 지도 서비스를 기획하고 직접 썼습니다.</div>
+      <div data-reveal="1" data-delay="300" style="margin-top:8px;font-size:13px;line-height:1.7;color:var(--color-neutral-600)">10년 6개월 · 중앙일보·네이버 JV 차이나랩 뉴스제작팀장 · 지금은 Claude Code로 고객 질문을 분석해 기획합니다</div>
+      <div data-reveal="1" data-delay="380" style="display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:26px">
         <a href="#work" class="btn btn-primary">주요 프로젝트 보기</a>
         <a href="mailto:lsseys1991@gmail.com" class="btn btn-ghost">lsseys1991@gmail.com</a>
       </div>
@@ -183,24 +186,116 @@
 
   <section id="about" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
     <div style="height:1px;background:linear-gradient(90deg,transparent,var(--color-neutral-300) 48px,var(--color-neutral-300) calc(100% - 48px),transparent)"></div>
-    <div data-reveal="1" style="margin-top:clamp(28px,4vw,48px);font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">KEYWORD</div>
+    <div data-reveal="1" style="margin-top:clamp(28px,4vw,48px);font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">RESULTS</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(24px,4vw,56px);margin-top:clamp(20px,3vw,34px)">
       <div data-reveal="1" data-delay="0">
-        <div style="font-size:clamp(26px,3.5vw,44px);font-weight:500;letter-spacing:-0.02em;color:var(--color-neutral-900);font-variant-numeric:tabular-nums;white-space:nowrap"><span data-count="10">10</span>년 <span data-count="6">6</span>개월</div>
-        <div style="margin-top:8px;font-size:13px;color:var(--color-neutral-600)">총 경력 · 차이나랩 뉴스제작팀장</div>
+        <div style="font-size:clamp(26px,3.5vw,44px);font-weight:500;letter-spacing:-0.02em;color:var(--color-neutral-900);font-variant-numeric:tabular-nums;white-space:nowrap">PV <span data-count="3">3</span>배</div>
+        <div style="margin-top:8px;font-size:13px;line-height:1.7;color:var(--color-neutral-600)">본문은 그대로, 제목만 바꿔서 (A/B 테스트 500건+)</div>
       </div>
       <div data-reveal="1" data-delay="110">
-        <div style="font-size:clamp(26px,3.5vw,44px);font-weight:500;letter-spacing:-0.02em;color:var(--color-neutral-900);font-variant-numeric:tabular-nums;white-space:nowrap"><span data-count="75600" data-comma="1">75,600</span>명</div>
-        <div style="margin-top:8px;font-size:13px;color:var(--color-neutral-600)">'중여커' 네이밍·상표등록·커뮤니티 빌딩</div>
+        <div style="font-size:clamp(26px,3.5vw,44px);font-weight:500;letter-spacing:-0.02em;color:var(--color-neutral-900);font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--color-accent-600)">US$<span data-count="22199.43" data-comma="1" data-decimals="2">22,199.43</span></div>
+        <div style="margin-top:8px;font-size:13px;line-height:1.7;color:var(--color-neutral-600)">광고 없이 콘텐츠 속 링크로 만든 트립닷컴 예약액 (약 2,944만 원)</div>
       </div>
       <div data-reveal="1" data-delay="220">
-        <div style="font-size:clamp(26px,3.5vw,44px);font-weight:500;letter-spacing:-0.02em;color:var(--color-neutral-900);font-variant-numeric:tabular-nums;white-space:nowrap"><span data-count="325000" data-comma="1">325,000</span>건 이상</div>
-        <div style="margin-top:8px;font-size:13px;color:var(--color-neutral-600)">사전 DB 표기 규칙·검수 총괄</div>
+        <div style="font-size:clamp(26px,3.5vw,44px);font-weight:500;letter-spacing:-0.02em;color:var(--color-neutral-900);font-variant-numeric:tabular-nums;white-space:nowrap"><span data-count="76255" data-comma="1">76,255</span>명</div>
+        <div style="margin-top:8px;font-size:13px;line-height:1.7;color:var(--color-neutral-600)">직접 이름 짓고 런칭한 커뮤니티 회원 (2026년 10월 기준)</div>
       </div>
     </div>
   </section>
 
-  <section style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
+  <section id="work" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
+    <div data-reveal="1" style="font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">WHAT I DID</div>
+    <div data-reveal="1" data-delay="80" style="margin-top:16px;font-size:clamp(15px,1.85vw,23px);line-height:1.55;color:var(--color-neutral-800);text-wrap:balance"><span style="color:var(--color-accent-700)">본인 기여도가 80% 이상</span>인 대표 프로젝트 6건입니다</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.4vw,30px);margin-top:clamp(34px,5vw,58px)">
+      <div data-reveal="1" data-delay="0" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
+        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">회원 76,255명, 링크로 만든 예약 2,944만 원</div>
+        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">중국 무비자 시행 18일 만에 커뮤니티를 제안하고 이름을 지어 런칭했습니다. 회원들이 자주 묻는 질문에 예약 링크를 붙여, 광고비 없이 트립닷컴 예약 83건을 만들었습니다.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
+          <span class="tag tag-outline">네이밍</span><span class="tag tag-outline">커뮤니티</span><span class="tag tag-outline">전환 콘텐츠</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
+        <a href="중여커 커뮤니티 상세.dc.html" aria-label="회원 76,255명, 링크로 만든 예약 2,944만 원 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
+      </div>
+      <div data-reveal="1" data-delay="90" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
+        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">제목 하나로 조회수 3배</div>
+        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">네이버 메인 중국 주제판의 편성과 헤드라인을 약 3년간 맡았습니다. 23자 제목과 썸네일로 A/B 테스트를 500건 넘게 하며 월 UB를 18만에서 23만으로 올렸습니다.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
+          <span class="tag tag-outline">헤드라인</span><span class="tag tag-outline">A/B 검증</span><span class="tag tag-outline">데이터</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
+        <a href="네이버 주제판 편성 상세.dc.html" aria-label="제목 하나로 조회수 3배 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
+      </div>
+      <div data-reveal="1" data-delay="180" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
+        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">중국어 몰라도 쓰는 중국 여행 지도</div>
+        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">커뮤니티에서 자주 나온 질문을 하나씩 지도 기능으로 만들었습니다. 분류와 표기 기준을 직접 세웠고, 3개월 동안 순방문자 11,000명이 찾았습니다.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
+          <span class="tag tag-outline">서비스 기획</span><span class="tag tag-outline">카테고리 분류</span><span class="tag tag-outline">표기 기준</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
+        <a href="중여커 지도 상세.dc.html" aria-label="중국어 몰라도 쓰는 중국 여행 지도 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
+      </div>
+      <div data-reveal="1" data-delay="270" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
+        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">첫 문장 하나로 51만 뷰</div>
+        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">중앙일보 'Our History' 카드뉴스를 발제부터 제목·본문까지 직접 구성했습니다. 14건 합계 406만 명이 읽었고, 플랫폼마다 맞게 다시 써서 발행했습니다.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
+          <span class="tag tag-outline">카드뉴스</span><span class="tag tag-outline">첫 문장</span><span class="tag tag-outline">숏폼 비주얼</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
+        <a href="카드뉴스 상세.dc.html" aria-label="첫 문장 하나로 51만 뷰 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
+      </div>
+      <div data-reveal="1" data-delay="360" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
+        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">자동화로 제작 시간 60% 단축, 4년 연속 납품</div>
+        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">네이버 지식백과·어학사전에 들어갈 콘텐츠를 해마다 1만 건 넘게 만들어 납품했습니다. 제작 공정을 새로 짜고 자동화해 작업 시간을 60% 줄였습니다.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
+          <span class="tag tag-outline">대량 제작 공정</span><span class="tag tag-outline">자동화</span><span class="tag tag-outline">검수</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
+        <a href="네이버 콘텐츠 프로젝트 상세.dc.html" aria-label="자동화로 제작 시간 60% 단축, 4년 연속 납품 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
+      </div>
+      <div data-reveal="1" data-delay="450" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
+        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">유료 구독으로 팔린 기획 시리즈</div>
+        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">차이나랩 에디터로 3년간 매주 2건 이상 완결된 글을 썼습니다. 직접 기획하고 이름 붙인 '대륙의 신기업 열전'은 유료 구독 콘텐츠로 판매됐습니다.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
+          <span class="tag tag-outline">기사 작성</span><span class="tag tag-outline">시리즈 기획</span><span class="tag tag-outline">유료 구독</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
+        <a href="기사 아카이브 상세.dc.html" aria-label="유료 구독으로 팔린 기획 시리즈 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="can" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
+    <div data-reveal="1" style="font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">WHAT I CAN</div>
+    <div data-reveal="1" data-delay="80" style="margin-top:16px;font-size:clamp(15px,1.85vw,23px);line-height:1.55;color:var(--color-neutral-800);text-wrap:balance">해 온 일을 다섯 가지로 정리했습니다</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,3vw,42px);margin-top:clamp(30px,5vw,58px)">
+      <div data-reveal="1" data-delay="0" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
+        <div style="font-size:15px;color:var(--color-neutral-900)">고객 관점 카피</div>
+        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">23자 제목과 썸네일로 A/B 테스트를 500건 넘게 했습니다. 추상적인 비유를 구체적인 장면으로 바꿔, 같은 본문의 조회수를 3배로 올렸습니다.</div>
+      </div>
+      <div data-reveal="1" data-delay="80" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
+        <div style="font-size:15px;color:var(--color-neutral-900)">콘텐츠로 만든 전환</div>
+        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">광고비 없이 콘텐츠 속 링크만으로 클릭 3,138회, 예약 83건(CVR 2.64%), 트립닷컴 예약액 US$22,199.43(약 2,944만 원)을 만들었습니다.</div>
+      </div>
+      <div data-reveal="1" data-delay="160" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
+        <div style="font-size:15px;color:var(--color-neutral-900)">AI 활용과 제작 효율화</div>
+        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">Claude Code로 커뮤니티 질문글의 키워드를 뽑아 기획에 쓰고, 질문과 댓글을 AI로 다시 엮어 콘텐츠로 발행합니다. 2023년에는 업무 자동화로 작업 시간을 60% 줄였습니다.</div>
+      </div>
+      <div data-reveal="1" data-delay="240" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
+        <div style="font-size:15px;color:var(--color-neutral-900)">데이터 기반 개선</div>
+        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">PV·UB·CTR·CVR과 유입 키워드 로그, 이용자 479명의 의견을 보고 회원이 빠져나가는 지점을 찾아 콘텐츠와 기능을 고쳤습니다.</div>
+      </div>
+      <div data-reveal="1" data-delay="320" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
+        <div style="font-size:15px;color:var(--color-neutral-900)">여러 직군과 협업</div>
+        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">기업·도시·음식·여행처럼 처음 다루는 주제도 매주 결과물로 냈습니다. 디자이너·개발자·외부 필진 30여 명, 제휴사와 일하며 5인 이상 팀을 이끌었습니다.</div>
+      </div>
+    </div>
+    <div data-reveal="1" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:clamp(28px,4vw,48px);font-size:12px;color:var(--color-neutral-600)">
+      <span class="tag tag-neutral">기획자</span><span class="tag tag-neutral">디자이너</span><span class="tag tag-neutral">개발자</span><span class="tag tag-neutral">외부필진</span><span class="tag tag-neutral">비즈니스</span><span class="tag tag-neutral">플랫폼사(네이버)</span>
+      <span style="margin-left:4px">콘텐츠 팀 리더로 여러 직군과 함께 프로젝트를 이끌었습니다</span>
+    </div>
+  </section>
+
+  <section id="career" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
     <div data-reveal="1" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px">
       <div style="font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">경력</div>
       <div style="font-size:11px;letter-spacing:0.14em;color:var(--color-neutral-700);font-variant-numeric:tabular-nums">2015 — 현재</div>
@@ -225,6 +320,7 @@
             <span style="width:3px;height:3px;border-radius:999px;background:var(--color-neutral-400)"></span>
             <span style="font-size:13px;color:var(--color-neutral-700)">모바일서비스팀 사원</span>
           </div>
+          <div style="margin-top:9px;font-size:13px;line-height:1.7;color:var(--color-neutral-700)">'Our History' 카드뉴스 기획·제작 · 단일 최고 51.7만 읽음</div>
         </div>
       </div>
 
@@ -248,7 +344,7 @@
             <span style="width:3px;height:3px;border-radius:999px;background:var(--color-neutral-400)"></span>
             <span style="font-size:13px;color:var(--color-neutral-700)">CP</span>
           </div>
-          <div style="margin-top:9px;font-size:13px;line-height:1.7;color:var(--color-neutral-700)">네이버 메인 중국 주제판 편성</div>
+          <div style="margin-top:9px;font-size:13px;line-height:1.7;color:var(--color-neutral-700)">네이버 메인 중국 주제판 편성 · 헤드라인 A/B 테스트 500건+ · 월 UB 18만 → 23만</div>
         </div>
       </div>
 
@@ -278,6 +374,7 @@
             <span style="width:3px;height:3px;border-radius:999px;background:var(--color-neutral-400)"></span>
             <span style="font-size:13px;color:var(--color-neutral-700)">브랜딩</span>
           </div>
+          <div style="margin-top:9px;font-size:13px;line-height:1.7;color:var(--color-neutral-700)">중여커 네이밍·런칭·운영(회원 76,255명) · 네이버 콘텐츠 프로젝트 4년 연속 납품 · 업무 자동화로 제작 시간 60% 단축</div>
         </div>
       </div>
 
@@ -285,141 +382,11 @@
     </div>
   </section>
 
-  <section style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
-    <div data-reveal="1" style="font-size:clamp(19px,2.6vw,34px);font-weight:500;line-height:1.3;letter-spacing:-0.015em;color:var(--color-neutral-900);text-wrap:balance">직접 쓰는 일로 시작해, 지금은 기준을 정합니다</div>
-    <div data-reveal="1" data-delay="90" style="margin-top:14px;font-size:14px;color:var(--color-neutral-600)">10년 6개월, 카드뉴스에서 커뮤니티 서비스와 브랜드까지.</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:clamp(22px,3vw,40px);margin-top:clamp(30px,5vw,60px)">
-      <div data-reveal="1" data-delay="0" style="padding-top:26px;border-top:1px solid var(--color-accent-300)">
-        <div style="font-size:11px;letter-spacing:0.2em;color:var(--color-accent-600)">01</div>
-        <div style="margin-top:12px;font-size:12px;color:var(--color-neutral-600)">2015–2017 · 인턴·사원</div>
-        <div style="margin-top:8px;font-size:19px;color:var(--color-neutral-900)">직접 씁니다.</div>
-        <div style="margin-top:12px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">중앙일보 창간 50주년 TF팀 인턴으로 시작해 모바일서비스팀에서 'Our History' 콘텐츠를 제작했습니다. 취재, 기사 작성, 디자이너와의 편집 커뮤니케이션, 매체별 리라이팅을 했습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="110" style="padding-top:26px;border-top:1px solid var(--color-accent-300)">
-        <div style="font-size:11px;letter-spacing:0.2em;color:var(--color-accent-600)">02</div>
-        <div style="margin-top:12px;font-size:12px;color:var(--color-neutral-600)">2017–2022 · 차이나랩 에디터·CP</div>
-        <div style="margin-top:8px;font-size:19px;color:var(--color-neutral-900)">실시간 데이터를 보고 바로 고칩니다.</div>
-        <div style="margin-top:12px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">네이버 메인 주제판(중국) 편성 담당자로 시간대별 잘 팔리는 콘텐츠를 연구하고, 타겟 유저의 흥미와 라이프스타일에 맞는 콘텐츠를 제안했습니다. 23글자 헤드라인과 썸네일의 A/B 테스트를 통해 실시간으로 지표 변화를 체감하며 '잘 팔리는 콘텐츠', '눈을 사로 잡는 카피'에 대한 암묵지를 쌓았습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="220" style="padding-top:26px;border-top:1px solid var(--color-accent-300)">
-        <div style="font-size:11px;letter-spacing:0.2em;color:var(--color-accent-600)">03</div>
-        <div style="margin-top:12px;font-size:12px;color:var(--color-neutral-600)">2023–현재 · 뉴스제작팀장</div>
-        <div style="margin-top:8px;font-size:19px;color:var(--color-neutral-900)">기준을 만듭니다.</div>
-        <div style="margin-top:12px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">프로젝트 수주와 제안서 작성, 업무 흐름을 짜고, 템플릿과 표기 원칙을 정합니다. 2023년(AI가 없던 시기)에는 코딩 기술자를 섭외해 업무를 자동화해 걸리는 시간을 60% 이상 줄였습니다. 운영 중인 서비스의 브랜딩을 위해 톤앤매너와 디자인을 통일하고, 사업처를 찾아 제휴를 제안하며 '돈 버는 플랫폼'으로 키워가고 있습니다.</div>
-      </div>
-    </div>
-    <div data-reveal="1" style="position:relative;margin-top:clamp(36px,5vw,64px);padding-top:clamp(22px,3vw,30px)">
-      <div class="stmt-rule" style="position:absolute;top:0;left:0;width:100%;height:1px;background:var(--color-accent-500);transform-origin:left center"></div>
-      <div style="display:flex;align-items:baseline;gap:clamp(14px,2vw,22px)">
-        <div style="flex:none;width:34px;height:2px;margin-top:0.62em;background:var(--color-accent-600)"></div>
-        <div style="font-size:clamp(19px,2.4vw,27px);line-height:1.5;letter-spacing:-0.01em;color:var(--color-neutral-900);text-wrap:pretty">프로젝트마다 일하는 방식을 <span style="position:relative;display:inline-block;color:var(--color-accent-700)"><span class="stmt-halo" style="position:absolute;left:-0.12em;right:-0.12em;bottom:0.02em;height:0.42em;background:var(--color-accent-200);border-radius:2px;z-index:0"></span><span style="position:relative;z-index:1">처음부터</span></span> 만들고 업무 흐름을 짤 수 있습니다.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="work" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
-    <div data-reveal="1" style="font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">WHAT I DO</div>
-    <div data-reveal="1" data-delay="80" style="margin-top:16px;font-size:clamp(11.5px,1.18vw,14px);line-height:1.85;color:var(--color-neutral-700);text-wrap:balance">언론사 인턴으로 시작해 기사작성, 콘텐츠 기획, 콘텐츠 비즈니스 프로젝트 총괄, 브랜드 네이밍, 서비스 기획까지 <span style="color:var(--color-neutral-900)">본인 기여도가 80% 이상</span>인 대표 프로젝트</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(18px,2.4vw,30px);margin-top:clamp(34px,5vw,58px)">
-      <div data-reveal="1" data-delay="0" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
-        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">이름을 짓고, 7만 5천 명을 모으고, 매출을 만들기까지</div>
-        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">중국여행자커뮤니티 '중여커'의 제안·네이밍·런칭·운영을 총괄했습니다.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
-          <span class="tag tag-outline">네이밍</span><span class="tag tag-outline">커뮤니티</span><span class="tag tag-outline">수익화</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
-        <a href="중여커 커뮤니티 상세.dc.html" aria-label="이름을 짓고, 7만 5천 명을 모으고, 매출을 만들기까지 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
-      </div>
-      <div data-reveal="1" data-delay="90" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
-        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">중국어 몰라도 쓰는 중국 여행 지도</div>
-        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">중국 여행을 앞둔 한국인 커뮤니티의 버티컬 서비스 '중여커 지도' 분류 체계와 표기 기준을 세우고 서비스를 직접 기획했습니다.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
-          <span class="tag tag-outline">서비스 기획</span><span class="tag tag-outline">IA</span><span class="tag tag-outline">표기 기준</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
-        <a href="중여커 지도 상세.dc.html" aria-label="중국어 몰라도 쓰는 중국 여행 지도 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
-      </div>
-      <div data-reveal="1" data-delay="180" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
-        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">제목 하나로 조회수 3배</div>
-        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">네이버 메인 중국 주제판 편성·헤드라인을 약 3년간 직접 담당했습니다.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
-          <span class="tag tag-outline">헤드라인</span><span class="tag tag-outline">A/B 테스트</span><span class="tag tag-outline">데이터</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
-        <a href="네이버 주제판 편성 상세.dc.html" aria-label="제목 하나로 조회수 3배 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
-      </div>
-      <div data-reveal="1" data-delay="270" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
-        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">첫 문장 하나로 51만 뷰</div>
-        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">중앙일보 'Our History' 카드뉴스를 발제부터 제목·본문까지 직접 구성했습니다. 플랫폼마다 맞게 다시 써서 발행했습니다.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
-          <span class="tag tag-outline">카드뉴스</span><span class="tag tag-outline">발제</span><span class="tag tag-outline">바이럴</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
-        <a href="카드뉴스 상세.dc.html" aria-label="첫 문장 하나로 51만 뷰 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
-      </div>
-      <div data-reveal="1" data-delay="360" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
-        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">기사를 쓰고, 읽히게 만들기</div>
-        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">차이나랩 에디터로 3년간 매주 2건 이상의 완결된 글을 썼습니다. '대륙의 신기업 열전'은 유료 구독 콘텐츠로 판매됐습니다.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
-          <span class="tag tag-outline">기사 작성</span><span class="tag tag-outline">시리즈 네이밍</span><span class="tag tag-outline">유료 구독</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
-        <a href="기사 아카이브 상세.dc.html" aria-label="기사를 쓰고, 읽히게 만들기 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
-      </div>
-      <div data-reveal="1" data-delay="450" class="card" style="position:relative;display:flex;flex-direction:column;height:100%;padding:clamp(24px,2.6vw,34px)">
-        <div class="card-title" style="font-size:19px;line-height:1.45;font-weight:500;letter-spacing:-0.015em;color:var(--color-neutral-900)">4년 연속, 네이버 콘텐츠 프로젝트 완수</div>
-        <div class="card-body" style="margin-top:18px;font-size:13.5px;line-height:1.85;color:var(--color-neutral-700)">연 만 건 이상의 대량 콘텐츠를 네이버 지식백과·어학사전에 납품했습니다. 자동화로 작업 시간을 60% 단축했습니다.</div>
-        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:30px">
-          <span class="tag tag-outline">프로젝트 총괄</span><span class="tag tag-outline">업무 흐름 세팅</span><span class="tag tag-outline">검수</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:20px;padding-top:18px;border-top:1px solid var(--color-neutral-300);font-size:12px;color:var(--color-accent-600)">상세 보기<svg width="13" height="13" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></div>
-        <a href="네이버 콘텐츠 프로젝트 상세.dc.html" aria-label="4년 연속, 네이버 콘텐츠 프로젝트 완수 — 상세 보기" style="position:absolute;inset:0;border-radius:inherit" style-hover="box-shadow:0 0 0 1px var(--color-accent-600)"></a>
-      </div>
-    </div>
-    <div data-reveal="1" style="margin-top:clamp(22px,3vw,34px);font-size:12px;color:var(--color-neutral-600)">본인 기여도 80% 이상인 대표 프로젝트 6건</div>
-  </section>
-
-  <section id="can" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,120px) clamp(20px,5vw,44px) 0">
-    <div data-reveal="1" style="font-size:11px;letter-spacing:0.24em;color:var(--color-accent-600)">WHAT I CAN</div>
-    <div data-reveal="1" data-delay="80" style="margin-top:16px;font-size:clamp(15px,1.85vw,23px);line-height:1.55;color:var(--color-neutral-800);text-wrap:balance">불편한 점을 찾아 서비스로 만들고, 막히는 부분을 풀면서 프로젝트를 처음부터 끝까지 맡았습니다</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(22px,3vw,42px);margin-top:clamp(30px,5vw,58px)">
-      <div data-reveal="1" data-delay="0" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
-        <div style="font-size:15px;color:var(--color-neutral-900)">브랜드 커뮤니케이션 전략</div>
-        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">중국 무비자 시행 18일 만에 커뮤니티 개설을 제안·런칭, 23개월 만에 회원 75,600명을 달성했습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="80" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
-        <div style="font-size:15px;color:var(--color-neutral-900)">브랜드 메시지 개발과 관리</div>
-        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">커뮤니티·연재·서비스를 소개하는 문장과 톤을 정하고, 팀원과 외부 필진이 함께 쓸 때도 같은 톤이 유지되도록 관리했습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="160" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
-        <div style="font-size:15px;color:var(--color-neutral-900)">브랜드 스토리 개발</div>
-        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">기업·도시·음식 이야기를 읽히는 콘텐츠로 풀어내고 '대륙의 신기업 열전' 등 유료 구독 콘텐츠로 판매했습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="240" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
-        <div style="font-size:15px;color:var(--color-neutral-900)">플랫폼·브랜드 네이밍</div>
-        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">커뮤니티 '중여커', 연재 '대륙의 신기업 열전', 지식백과 '요리조리 중국레시피' 등 서비스와 시리즈 이름을 직접 지었습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="320" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
-        <div style="font-size:15px;color:var(--color-neutral-900)">카피 검수와 가이드 운영</div>
-        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">32만 5,000건 규모 사전 콘텐츠의 표기 기준을 정하고 검수까지 이어지는 업무 흐름을 세팅했습니다. 외부 필진 원고도 직접 교열하며 톤앤매너를 맞춰왔습니다.</div>
-      </div>
-      <div data-reveal="1" data-delay="400" style="padding-top:26px;border-top:1px solid var(--color-neutral-300)">
-        <div style="font-size:15px;color:var(--color-neutral-900)">성과 측정과 개선</div>
-        <div style="margin-top:10px;font-size:13px;line-height:1.85;color:var(--color-neutral-700)">유입 경로와 검색 키워드를 보고 회원들이 빠져나가는 지점을 찾아, 콘텐츠·기능·제휴로 보완하는 일을 23개월간 해왔습니다. 네이버 메인 주제판 운영으로 A/B 테스트를 500건 이상 했고 카피와 썸네일은 클릭률·도달률로 확인했습니다.</div>
-      </div>
-    </div>
-    <div data-reveal="1" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:clamp(28px,4vw,48px);font-size:12px;color:var(--color-neutral-600)">
-      <span class="tag tag-neutral">기획자</span><span class="tag tag-neutral">디자이너</span><span class="tag tag-neutral">개발자</span><span class="tag tag-neutral">외부필진</span><span class="tag tag-neutral">비즈니스</span><span class="tag tag-neutral">플랫폼사(네이버)</span>
-      <span style="margin-left:4px">콘텐츠 팀 리더로 여러 직군과 함께 프로젝트를 이끌었습니다</span>
-    </div>
-  </section>
-
   <section style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(64px,9vw,140px) clamp(20px,5vw,44px) clamp(40px,6vw,80px)">
     <div style="height:1px;background:linear-gradient(90deg,transparent,var(--color-neutral-300) 48px,var(--color-neutral-300) calc(100% - 48px),transparent)"></div>
-    <div data-reveal="1" style="margin-top:clamp(32px,5vw,64px);font-size:clamp(21px,3.1vw,42px);font-weight:500;line-height:1.35;letter-spacing:-0.015em;color:var(--color-neutral-900);text-wrap:balance">오너십을 갖고 모든 업무에 임합니다.</div>
-    <div data-reveal="1" data-delay="90" style="margin-top:18px;font-size:14px;line-height:1.9;color:var(--color-neutral-700);max-width:56ch">새로운 업무는 <span style="color:var(--color-neutral-900)">'배운다'</span>, 늘 하던 업무는 <span style="color:var(--color-neutral-900)">'완성도를 높인다'</span>는 애티튜드로 일합니다.</div>
+    <div data-reveal="1" style="margin-top:clamp(32px,5vw,64px);font-size:clamp(21px,3.1vw,42px);font-weight:500;line-height:1.35;letter-spacing:-0.015em;color:var(--color-neutral-900);text-wrap:balance">연락처</div>
     <div data-reveal="1" data-delay="160" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px">
-      <span class="tag tag-outline">브랜드 카피라이팅</span><span class="tag tag-outline">브랜드 커뮤니케이션 전략</span><span class="tag tag-outline">PR</span><span class="tag tag-outline">대규모 콘텐츠 디렉팅</span><span class="tag tag-outline">기사 작성</span>
+      <span class="tag tag-outline">고객 관점 카피</span><span class="tag tag-outline">콘텐츠 기획·편집</span><span class="tag tag-outline">데이터 기반 개선</span><span class="tag tag-outline">AI 콘텐츠 제작</span><span class="tag tag-outline">대량 콘텐츠 디렉팅</span>
     </div>
     <div data-reveal="1" data-delay="240" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:clamp(28px,4vw,46px)">
       <a href="mailto:lsseys1991@gmail.com" class="btn btn-primary">lsseys1991@gmail.com</a>
@@ -427,7 +394,8 @@
     </div>
   </section>
 
-  <footer style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:24px clamp(20px,5vw,44px) 46px;font-size:12px;color:var(--color-neutral-600);border-top:1px solid var(--color-neutral-300)">© 임서영. All rights reserved. Brand Copywriter &amp; Content Director</footer>
+  <footer style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:24px clamp(20px,5vw,44px) 46px;font-size:12px;color:var(--color-neutral-600);border-top:1px solid var(--color-neutral-300)">© 임서영. All rights reserved. Content Editor &amp; Copywriter</footer>
+
 
 </div>
 </x-dc>
@@ -659,11 +627,13 @@ class Component extends DCLogic {
         cio.unobserve(el);
         const target = parseFloat(el.dataset.count) || 0;
         const comma = el.dataset.comma === '1';
+        const dec = parseInt(el.dataset.decimals || '0', 10) || 0;
         const t0 = performance.now(), d = 1400;
         const step = now => {
           const p = Math.min(1, (now - t0) / d);
-          const v = Math.round(target * (1 - Math.pow(1 - p, 3)));
-          el.textContent = comma ? v.toLocaleString('en-US') : String(v);
+          const raw = target * (1 - Math.pow(1 - p, 3));
+          const v = dec ? Number(raw.toFixed(dec)) : Math.round(raw);
+          el.textContent = comma ? v.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec }) : (dec ? v.toFixed(dec) : String(v));
           if (p < 1) requestAnimationFrame(step);
         };
         requestAnimationFrame(step);
